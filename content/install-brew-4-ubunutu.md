@@ -1,7 +1,7 @@
 Title: Installing brew on ubunutu-18
 Date: 2020-12-06
 Tags: brew, ubuntu
-Category: Blog
+Category: Runbook
 Summary: Runbook to install and configure brew for ubuntu-18
 
 Its really simple and to be honest doesnt need a blog post, but since i managed to ignore all the warning signs, someone else might :). 

@@ -1,7 +1,7 @@
 Title: Create a pelican blog
 Date: 2020-12-11
 Tags: pelican, python
-Category: Blog
+Category: Runbook
 Summary: Inital steps to setup a pelican blog
 
 Inital steps to create a pelican blog (like this one) are below:
