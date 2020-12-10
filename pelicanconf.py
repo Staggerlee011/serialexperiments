@@ -18,6 +18,9 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+TAGS_URL = 'tags.html'
+ARCHIVES_URL = 'archives.html'
+
 # Blogroll
 LINKS = (('Home','/index.html'),
 ('About','/pages/about.html'),)
@@ -34,6 +37,7 @@ DEFAULT_PAGINATION = 6
 THEME = 'themes/voce'
 USER_LOGO_URL = 'images/07.png'
 DEFAULT_DATE_FORMAT = "%b %d, %Y"  
+
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
