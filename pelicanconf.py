@@ -28,7 +28,7 @@ SOCIAL = (('Email','mailto:stebennettsjb@gmail.com'),
 ('LInkedin','https://www.linkedin.com/in/stephenjohnbennett/'),
 )
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 6
 
 # voce settings
 THEME = 'themes/voce'
