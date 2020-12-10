@@ -1,7 +1,7 @@
 Title: Terraform remote statefile creation
 Date: 2020-12-04
 Tags: terraform, gist
-Category: DevOps
+Category: Blog
 Summary: Terraform code to generate a secure s3 bucket for remote state
 
 When you deploy Terraform you'll want to have a remote state setup to manage team access. For AWS the standard is to use S3 bucket. As you cant store the state of bucket IN the bucket, its one of the only things that you have to leave outside of being controlled via the remote state.

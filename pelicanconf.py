@@ -34,6 +34,7 @@ SOCIAL = (('Email','mailto:stebennettsjb@gmail.com'),
 DEFAULT_PAGINATION = 6
 
 # voce settings
+DISPLAY_CATEGORIES_ON_MENU = True
 THEME = 'themes/voce'
 USER_LOGO_URL = 'images/07.png'
 DEFAULT_DATE_FORMAT = "%b %d, %Y"  

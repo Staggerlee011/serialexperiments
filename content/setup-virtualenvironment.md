@@ -1,6 +1,6 @@
-Title: Quick setup of python virtualenvironment
+Title: setup of python virtualenvironment
 Date: 2020-12-07
-Tags: runbook,python, ubuntu, windows
+Tags: python, ubuntu, windows
 Category: Runbook
 Summary: Setup python virtualenvironment for windows or ubuntu
 

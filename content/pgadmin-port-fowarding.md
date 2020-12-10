@@ -1,6 +1,6 @@
-Title: runbook - port-forwarding pgadmin
+Title: port-forwarding pgadmin
 Date: 2020-12-03
-Tags: runbook, kubernetes
+Tags: kubernetes
 Category: Runbook
 Summary: run for kubernetes port-forwarding pgadmin
 
