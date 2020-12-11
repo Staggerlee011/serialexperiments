@@ -48,3 +48,8 @@ PLUGINS = [
     'pelican_gist',
     # ...
 ]
+
+EXTRA_PATH_METADATA = {
+    'files/favicon.ico': {'path': 'favicon.ico'},
+    'files/robots.txt': {'path': 'robots.txt'},
+}
