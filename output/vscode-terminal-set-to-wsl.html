@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="staggerlee011">
-  <meta name="description" content="vscode terminal set to wsl | ">
+  <meta name="description" content="vscode terminal set to wsl | after getting myself into far to many messes with using both powershell and wsl, im moving uninstalling all things windows...">
 
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">  
@@ -58,7 +58,7 @@
               </ul>
               </div>
               <div class="social">   
-                <a href="mailto:stebennettsjb@gmail.com" title="Email" >
+                <a data-email="moc.liamg@bjsttennebets:otliam" data-title="Email" title="You need javascript enabled to view this email" class="email">
 <i class="fa fa-envelope fa-lg"></i></a>
                 <a href="https://github.com/Staggerlee011" title="GitHub" >
 <i class="fa fa-github fa-lg"></i></a>
@@ -76,6 +76,19 @@
         </span><!-- end of .site-name -->
       </div><!-- end of #logo -->
         <div class="tagline">
+                <a href="/tag/blog.html" >blog (1)</a> &#124; 
+                <a href="/tag/brew.html" >brew (1)</a> &#124; 
+                <a href="/tag/gist.html" >gist (1)</a> &#124; 
+                <a href="/tag/github.html" >github (1)</a> &#124; 
+                <a href="/tag/kubernetes.html" >kubernetes (2)</a> &#124; 
+                <a href="/tag/pelican.html" >pelican (1)</a> &#124; 
+                <a href="/tag/python.html" >python (2)</a> &#124; 
+                <a href="/tag/terraform.html" >terraform (1)</a> &#124; 
+                <a href="/tag/ubuntu.html" >ubuntu (3)</a> &#124; 
+                <a href="/tag/vscode.html" >vscode (2)</a> &#124; 
+                <a href="/tag/windows.html" >windows (2)</a> &#124; 
+                <a href="/tag/wls.html" >wls (1)</a> &#124; 
+                <a href="/archives.html" >Archives (10)</a>
         </div>
     </div>
 
@@ -97,7 +110,42 @@
       </header><!-- .entry-header -->
       <div class="fb-like" data-href="/vscode-terminal-set-to-wsl.html" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
       <div class="entry-content">
-        
+        <p>after getting myself into far to many messes with using both powershell and wsl, im moving uninstalling all things windows and trying to only run <code>work</code> apps via the wsl ubunutu image. with that i stil use vscode for all my coding and having the terminal open for all comamnds that i need. To update it to use wsl is super easy via</p>
+<h2>steps to update vscode default terminal</h2>
+<ul>
+<li>open the terminal</li>
+<li>select the drop on the right hand side dropdown bar</li>
+<li>select "Select default shell"</li>
+</ul>
+<p><img alt="image of terminal" src="images/vscode-terminal-wsl-01.JPG"></p>
+<p><strong>This opens the command palette with the options you cna switch to</strong></p>
+<p><img alt="vscode command palette" src="images/vscode-terminal-wsl-02.JPG"></p>
+<ul>
+<li>select WSL bash</li>
+</ul>
+<h2>common issues</h2>
+<p>i found that my default wsl image was docker when setting this up. So after completing the above I would then get an error saying </p>
+<div class="highlight"><pre><span></span><code><span class="n">The</span> <span class="n">terminal</span> <span class="k">process</span> <span class="s2">&quot;C:\Windows\System32\wsl.exe&quot;</span> <span class="n">failed</span> <span class="n">to</span> <span class="n">launch</span> <span class="p">(</span><span class="n">exit</span> <span class="n">code</span><span class="err">:</span> <span class="n">1</span><span class="p">).</span>
+</code></pre></div>
+
+<p><img alt="error from vscode for wsl" src="images/vscode-terminal-wsl-03.png"></p>
+<p>The fix is to update wsl and set the ubuntu image as your default wsl:</p>
+<p>running the below will list out all your wsl images as well inidicate which is your current default:</p>
+<div class="highlight"><pre><span></span><code><span class="n">wslconfig</span><span class="p">.</span><span class="n">exe</span> <span class="p">/</span><span class="n">l</span>
+</code></pre></div>
+
+<p>run the below to update it to your prefered disto:</p>
+<div class="highlight"><pre><span></span><code><span class="n">wslconfig</span><span class="p">.</span><span class="n">exe</span> <span class="p">/</span><span class="n">setdefault</span> <span class="n">Ubuntu</span><span class="p">-</span><span class="n">18</span><span class="p">.</span><span class="n">04</span>
+</code></pre></div>
+
+<p>confirm via running <code>wslconfig</code> again</p>
+<p><img alt="wslconfig default image" src="images/vscode-terminal-wsl-04.png"></p>
+<p>You should now be able to open wsl from vscode</p>
+<h2>references</h2>
+<ul>
+<li><a href="https://code.visualstudio.com/docs/editor/integrated-terminal">vscode termianl integrations</a></li>
+<li><a href="https://code.visualstudio.com/docs/supporting/troubleshoot-terminal-launch">troubleshooting vscode terminal launch</a></li>
+</ul>
       </div><!-- .entry-content -->
       <br /><br />
       <div class="article_meta">
@@ -139,6 +187,27 @@
     }})
   </script>
 
+  <script type="text/javascript">
+    window.addEventListener('load', function(){
+      var e = document.querySelectorAll(".email");
+      for (var i = 0; i < e.length; i++) {
+        var email = e[i].getAttribute("data-email")
+        var title = e[i].getAttribute("data-title")
+        if (email){
+          e[i].href = email.split("").reverse().join("");
+          e[i].removeAttribute("data-email");
+          e[i].removeAttribute("data-title");
+          e[i].removeAttribute("class");
+          if (title){
+            e[i].setAttribute("title", title);
+          }
+          else{
+            e[i].removeAttribute("title");
+          }
+        }
+      }
+    })
+  </script>
 
 
 

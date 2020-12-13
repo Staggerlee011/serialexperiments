@@ -25,7 +25,7 @@
  
 
 
-  <meta name="keywords" content="vscode, github, pelican, python, wls, windows, ubuntu, kubernetes, brew, terraform, gist, runbook, k8s, blog">
+  <meta name="keywords" content="vscode, github, pelican, python, wls, windows, ubuntu, kubernetes, brew, terraform, gist, blog">
 
   <title>Archive</title>
 
@@ -56,7 +56,7 @@
               </ul>
               </div>
               <div class="social">   
-                <a href="mailto:stebennettsjb@gmail.com" title="Email" >
+                <a data-email="moc.liamg@bjsttennebets:otliam" data-title="Email" title="You need javascript enabled to view this email" class="email">
 <i class="fa fa-envelope fa-lg"></i></a>
                 <a href="https://github.com/Staggerlee011" title="GitHub" >
 <i class="fa fa-github fa-lg"></i></a>
@@ -74,6 +74,19 @@
         </span><!-- end of .site-name -->
       </div><!-- end of #logo -->
         <div class="tagline">
+                <a href="/tag/blog.html" >blog (1)</a> &#124; 
+                <a href="/tag/brew.html" >brew (1)</a> &#124; 
+                <a href="/tag/gist.html" >gist (1)</a> &#124; 
+                <a href="/tag/github.html" >github (1)</a> &#124; 
+                <a href="/tag/kubernetes.html" >kubernetes (2)</a> &#124; 
+                <a href="/tag/pelican.html" >pelican (1)</a> &#124; 
+                <a href="/tag/python.html" >python (2)</a> &#124; 
+                <a href="/tag/terraform.html" >terraform (1)</a> &#124; 
+                <a href="/tag/ubuntu.html" >ubuntu (3)</a> &#124; 
+                <a href="/tag/vscode.html" >vscode (2)</a> &#124; 
+                <a href="/tag/windows.html" >windows (2)</a> &#124; 
+                <a href="/tag/wls.html" >wls (1)</a> &#124; 
+                <a href="/archives.html" class="active">Archives (10)</a>
         </div>
     </div>
 
@@ -97,10 +110,10 @@
               <li><time datetime="2020-12-11T00:00:00+00:00">Dec 11, 2020</time> - <a href="/wsl-helpful-commands.html">wsl helpful commands</a></li>
               <li><time datetime="2020-12-10T00:00:00+00:00">Dec 10, 2020</time> - <a href="/vscode-terminal-set-to-wsl.html">vscode terminal set to wsl</a></li>
               <li><time datetime="2020-12-09T00:00:00+00:00">Dec 09, 2020</time> - <a href="/kubernetes-workstation-setup.html">Kubernetes workstation setup</a></li>
-              <li><time datetime="2020-12-07T00:00:00+00:00">Dec 07, 2020</time> - <a href="/quick-setup-of-python-virtualenvironment.html">Quick setup of python virtualenvironment</a></li>
+              <li><time datetime="2020-12-07T00:00:00+00:00">Dec 07, 2020</time> - <a href="/setup-of-python-virtualenvironment.html">setup of python virtualenvironment</a></li>
               <li><time datetime="2020-12-06T00:00:00+00:00">Dec 06, 2020</time> - <a href="/installing-brew-on-ubunutu-18.html">Installing brew on ubunutu-18</a></li>
               <li><time datetime="2020-12-04T00:00:00+00:00">Dec 04, 2020</time> - <a href="/terraform-remote-statefile-creation.html">Terraform remote statefile creation</a></li>
-              <li><time datetime="2020-12-03T00:00:00+00:00">Dec 03, 2020</time> - <a href="/runbook-port-forwarding-pgadmin.html">runbook - port-forwarding pgadmin</a></li>
+              <li><time datetime="2020-12-03T00:00:00+00:00">Dec 03, 2020</time> - <a href="/port-forwarding-pgadmin.html">port-forwarding pgadmin</a></li>
               <li><time datetime="2020-12-02T00:00:00+00:00">Dec 02, 2020</time> - <a href="/new-blog-site.html">New blog site</a></li>
           </ul>
     </dl>
@@ -140,6 +153,27 @@
     }})
   </script>
 
+  <script type="text/javascript">
+    window.addEventListener('load', function(){
+      var e = document.querySelectorAll(".email");
+      for (var i = 0; i < e.length; i++) {
+        var email = e[i].getAttribute("data-email")
+        var title = e[i].getAttribute("data-title")
+        if (email){
+          e[i].href = email.split("").reverse().join("");
+          e[i].removeAttribute("data-email");
+          e[i].removeAttribute("data-title");
+          e[i].removeAttribute("class");
+          if (title){
+            e[i].setAttribute("title", title);
+          }
+          else{
+            e[i].removeAttribute("title");
+          }
+        }
+      }
+    })
+  </script>
 
 
 </body>

@@ -25,7 +25,7 @@
  
 
 
-  <meta name="keywords" content="vscode, github, pelican, python, wls, windows, ubuntu, kubernetes, brew, terraform, gist, runbook, k8s, blog">
+  <meta name="keywords" content="vscode, github, pelican, python, wls, windows, ubuntu, kubernetes, brew, terraform, gist, blog">
 
   <title>serialexperiments</title>
 
@@ -56,7 +56,7 @@
               </ul>
               </div>
               <div class="social">   
-                <a href="mailto:stebennettsjb@gmail.com" title="Email" >
+                <a data-email="moc.liamg@bjsttennebets:otliam" data-title="Email" title="You need javascript enabled to view this email" class="email">
 <i class="fa fa-envelope fa-lg"></i></a>
                 <a href="https://github.com/Staggerlee011" title="GitHub" >
 <i class="fa fa-github fa-lg"></i></a>
@@ -74,6 +74,19 @@
         </span><!-- end of .site-name -->
       </div><!-- end of #logo -->
         <div class="tagline">
+                <a href="/tag/blog.html" >blog (1)</a> &#124; 
+                <a href="/tag/brew.html" >brew (1)</a> &#124; 
+                <a href="/tag/gist.html" >gist (1)</a> &#124; 
+                <a href="/tag/github.html" >github (1)</a> &#124; 
+                <a href="/tag/kubernetes.html" >kubernetes (2)</a> &#124; 
+                <a href="/tag/pelican.html" >pelican (1)</a> &#124; 
+                <a href="/tag/python.html" >python (2)</a> &#124; 
+                <a href="/tag/terraform.html" >terraform (1)</a> &#124; 
+                <a href="/tag/ubuntu.html" >ubuntu (3)</a> &#124; 
+                <a href="/tag/vscode.html" >vscode (2)</a> &#124; 
+                <a href="/tag/windows.html" >windows (2)</a> &#124; 
+                <a href="/tag/wls.html" >wls (1)</a> &#124; 
+                <a href="/archives.html" >Archives (10)</a>
         </div>
     </div>
 
@@ -156,62 +169,10 @@
 		<div class="post-inner-content">
 			<header class="entry-header page-header">
 				<span class="cat-item"><time datetime="2020-12-07 00:00:00+00:00">Dec 07, 2020</time></span>
-				<h1 class="entry-title"><a href="/quick-setup-of-python-virtualenvironment.html">Quick setup of python virtualenvironment</a></h1>
+				<h1 class="entry-title"><a href="/setup-of-python-virtualenvironment.html">setup of python virtualenvironment</a></h1>
 			</header><!-- .entry-header -->
 			<div class="entry-content">
 				Setup python virtualenvironment for windows or ubuntu
-        	</div><!-- .entry-content -->
-		</div>
-	</div>
-</article><!-- #post-## -->
-<article class="post">
-	<div class="blog-item-wrap">
-		<div class="post-inner-content">
-			<header class="entry-header page-header">
-				<span class="cat-item"><time datetime="2020-12-06 00:00:00+00:00">Dec 06, 2020</time></span>
-				<h1 class="entry-title"><a href="/installing-brew-on-ubunutu-18.html">Installing brew on ubunutu-18</a></h1>
-			</header><!-- .entry-header -->
-			<div class="entry-content">
-				Runbook to install and configure brew for ubuntu-18
-        	</div><!-- .entry-content -->
-		</div>
-	</div>
-</article><!-- #post-## -->
-<article class="post">
-	<div class="blog-item-wrap">
-		<div class="post-inner-content">
-			<header class="entry-header page-header">
-				<span class="cat-item"><time datetime="2020-12-04 00:00:00+00:00">Dec 04, 2020</time></span>
-				<h1 class="entry-title"><a href="/terraform-remote-statefile-creation.html">Terraform remote statefile creation</a></h1>
-			</header><!-- .entry-header -->
-			<div class="entry-content">
-				Terraform code to generate a secure s3 bucket for remote state
-        	</div><!-- .entry-content -->
-		</div>
-	</div>
-</article><!-- #post-## -->
-<article class="post">
-	<div class="blog-item-wrap">
-		<div class="post-inner-content">
-			<header class="entry-header page-header">
-				<span class="cat-item"><time datetime="2020-12-03 00:00:00+00:00">Dec 03, 2020</time></span>
-				<h1 class="entry-title"><a href="/runbook-port-forwarding-pgadmin.html">runbook - port-forwarding pgadmin</a></h1>
-			</header><!-- .entry-header -->
-			<div class="entry-content">
-				run for kubernetes port-forwarding pgadmin
-        	</div><!-- .entry-content -->
-		</div>
-	</div>
-</article><!-- #post-## -->
-<article class="post">
-	<div class="blog-item-wrap">
-		<div class="post-inner-content">
-			<header class="entry-header page-header">
-				<span class="cat-item"><time datetime="2020-12-02 00:00:00+00:00">Dec 02, 2020</time></span>
-				<h1 class="entry-title"><a href="/new-blog-site.html">New blog site</a></h1>
-			</header><!-- .entry-header -->
-			<div class="entry-content">
-				Ive moved my blog from wordpress to a pelican
         	</div><!-- .entry-content -->
 		</div>
 	</div>
@@ -222,9 +183,11 @@
   <span id="left">
   </span>
   <span id="right">
+      <a href="/index2.html">Next <i class="fa fa-arrow-circle-right"></i></a>
   </span>
   <div>
       <a href="/index.html">[1]</a>
+      <a href="/index2.html"> 2 </a>
   </div>
 </div>
 </footer>
@@ -261,6 +224,27 @@
     }})
   </script>
 
+  <script type="text/javascript">
+    window.addEventListener('load', function(){
+      var e = document.querySelectorAll(".email");
+      for (var i = 0; i < e.length; i++) {
+        var email = e[i].getAttribute("data-email")
+        var title = e[i].getAttribute("data-title")
+        if (email){
+          e[i].href = email.split("").reverse().join("");
+          e[i].removeAttribute("data-email");
+          e[i].removeAttribute("data-title");
+          e[i].removeAttribute("class");
+          if (title){
+            e[i].setAttribute("title", title);
+          }
+          else{
+            e[i].removeAttribute("title");
+          }
+        }
+      }
+    })
+  </script>
 
 
 </body>

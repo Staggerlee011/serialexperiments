@@ -25,7 +25,7 @@
  
 
 
-  <meta name="keywords" content="vscode, github, pelican, python, wls, windows, ubuntu, kubernetes, brew, terraform, gist, runbook, k8s, blog">
+  <meta name="keywords" content="vscode, github, pelican, python, wls, windows, ubuntu, kubernetes, brew, terraform, gist, blog">
 
   <title>Tags</title>
 
@@ -56,7 +56,7 @@
               </ul>
               </div>
               <div class="social">   
-                <a href="mailto:stebennettsjb@gmail.com" title="Email" >
+                <a data-email="moc.liamg@bjsttennebets:otliam" data-title="Email" title="You need javascript enabled to view this email" class="email">
 <i class="fa fa-envelope fa-lg"></i></a>
                 <a href="https://github.com/Staggerlee011" title="GitHub" >
 <i class="fa fa-github fa-lg"></i></a>
@@ -74,6 +74,19 @@
         </span><!-- end of .site-name -->
       </div><!-- end of #logo -->
         <div class="tagline">
+                <a href="/tag/blog.html" >blog (1)</a> &#124; 
+                <a href="/tag/brew.html" >brew (1)</a> &#124; 
+                <a href="/tag/gist.html" >gist (1)</a> &#124; 
+                <a href="/tag/github.html" >github (1)</a> &#124; 
+                <a href="/tag/kubernetes.html" >kubernetes (2)</a> &#124; 
+                <a href="/tag/pelican.html" >pelican (1)</a> &#124; 
+                <a href="/tag/python.html" >python (2)</a> &#124; 
+                <a href="/tag/terraform.html" >terraform (1)</a> &#124; 
+                <a href="/tag/ubuntu.html" >ubuntu (3)</a> &#124; 
+                <a href="/tag/vscode.html" >vscode (2)</a> &#124; 
+                <a href="/tag/windows.html" >windows (2)</a> &#124; 
+                <a href="/tag/wls.html" >wls (1)</a> &#124; 
+                <a href="/archives.html" >Archives (10)</a>
         </div>
     </div>
 
@@ -93,11 +106,9 @@
           <li><a href="/tag/brew.html">brew</a> (1)</li>
           <li><a href="/tag/gist.html">gist</a> (1)</li>
           <li><a href="/tag/github.html">github</a> (1)</li>
-          <li><a href="/tag/k8s.html">k8s</a> (1)</li>
-          <li><a href="/tag/kubernetes.html">kubernetes</a> (1)</li>
+          <li><a href="/tag/kubernetes.html">kubernetes</a> (2)</li>
           <li><a href="/tag/pelican.html">pelican</a> (1)</li>
           <li><a href="/tag/python.html">python</a> (2)</li>
-          <li><a href="/tag/runbook.html">runbook</a> (1)</li>
           <li><a href="/tag/terraform.html">terraform</a> (1)</li>
           <li><a href="/tag/ubuntu.html">ubuntu</a> (3)</li>
           <li><a href="/tag/vscode.html">vscode</a> (2)</li>
@@ -139,6 +150,27 @@
     }})
   </script>
 
+  <script type="text/javascript">
+    window.addEventListener('load', function(){
+      var e = document.querySelectorAll(".email");
+      for (var i = 0; i < e.length; i++) {
+        var email = e[i].getAttribute("data-email")
+        var title = e[i].getAttribute("data-title")
+        if (email){
+          e[i].href = email.split("").reverse().join("");
+          e[i].removeAttribute("data-email");
+          e[i].removeAttribute("data-title");
+          e[i].removeAttribute("class");
+          if (title){
+            e[i].setAttribute("title", title);
+          }
+          else{
+            e[i].removeAttribute("title");
+          }
+        }
+      }
+    })
+  </script>
 
 
 </body>

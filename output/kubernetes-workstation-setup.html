@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="staggerlee011">
-  <meta name="description" content="Kubernetes workstation setup | brew install kubectl kube-ps1 kubectx octant set up an alias for kubectl">
+  <meta name="description" content="Kubernetes workstation setup | this is my current setup for kubernetes (running on wsl ubunutu-18) install software i currently use: kubectl kube-ps1...">
 
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">  
@@ -58,7 +58,7 @@
               </ul>
               </div>
               <div class="social">   
-                <a href="mailto:stebennettsjb@gmail.com" title="Email" >
+                <a data-email="moc.liamg@bjsttennebets:otliam" data-title="Email" title="You need javascript enabled to view this email" class="email">
 <i class="fa fa-envelope fa-lg"></i></a>
                 <a href="https://github.com/Staggerlee011" title="GitHub" >
 <i class="fa fa-github fa-lg"></i></a>
@@ -76,6 +76,19 @@
         </span><!-- end of .site-name -->
       </div><!-- end of #logo -->
         <div class="tagline">
+                <a href="/tag/blog.html" >blog (1)</a> &#124; 
+                <a href="/tag/brew.html" >brew (1)</a> &#124; 
+                <a href="/tag/gist.html" >gist (1)</a> &#124; 
+                <a href="/tag/github.html" >github (1)</a> &#124; 
+                <a href="/tag/kubernetes.html" >kubernetes (2)</a> &#124; 
+                <a href="/tag/pelican.html" >pelican (1)</a> &#124; 
+                <a href="/tag/python.html" >python (2)</a> &#124; 
+                <a href="/tag/terraform.html" >terraform (1)</a> &#124; 
+                <a href="/tag/ubuntu.html" >ubuntu (3)</a> &#124; 
+                <a href="/tag/vscode.html" >vscode (2)</a> &#124; 
+                <a href="/tag/windows.html" >windows (2)</a> &#124; 
+                <a href="/tag/wls.html" >wls (1)</a> &#124; 
+                <a href="/archives.html" >Archives (10)</a>
         </div>
     </div>
 
@@ -97,12 +110,52 @@
       </header><!-- .entry-header -->
       <div class="fb-like" data-href="/kubernetes-workstation-setup.html" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
       <div class="entry-content">
-        <div class="highlight"><pre><span></span><code><span class="err">brew install kubectl kube-ps1 kubectx octant</span>
+        <p>this is my current setup for kubernetes (running on wsl ubunutu-18)</p>
+<h2>install software</h2>
+<p>i currently use:</p>
+<ul>
+<li>kubectl</li>
+<li>kube-ps1</li>
+<li>kubectx</li>
+<li>octant</li>
+</ul>
+<p>all of these can be installed via brew:</p>
+<div class="highlight"><pre><span></span><code>brew install kubectl kube-ps1 kubectx octant
 </code></pre></div>
 
-<p>set up an alias for kubectl</p>
-<div class="highlight"><pre><span></span><code>
+<h3>configure kube-ps1</h3>
+<p>after installing kube-ps1 you will also need to update <code>~/.bashrc</code></p>
+<div class="highlight"><pre><span></span><code>sudo vim ~/.bashrc
 </code></pre></div>
+
+<p>insert into the file <strong>MAKE SURE TO DO THIS AT THE BOTTOM OF THE PAGE!</strong> the code below and save and exit <code>:wq</code></p>
+<div class="highlight"><pre><span></span><code><span class="nb">source</span> <span class="s2">&quot;</span><span class="k">$(</span>brew --prefix<span class="k">)</span><span class="s2">/opt/kube-ps1/share/kube-ps1.sh&quot;</span>
+<span class="nv">PS1</span><span class="o">=</span><span class="s1">&#39;$(kube_ps1)&#39;</span><span class="nv">$PS1</span>
+</code></pre></div>
+
+<p>once youve saved the file re <code>source</code> it and it should load up in your terminal</p>
+<div class="highlight"><pre><span></span><code><span class="nb">source</span> ~/.bashrc
+</code></pre></div>
+
+<h2>Set up kubectl alias</h2>
+<p>As someone who cant spell or type, alias's are my friend, i just the common alias of <code>k = kubectl</code></p>
+<div class="highlight"><pre><span></span><code>sudo vim ~/.bash_aliases
+</code></pre></div>
+
+<p>insert into the file the below:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">alias</span> <span class="nv">k</span><span class="o">=</span><span class="s1">&#39;kubectl&#39;</span>
+</code></pre></div>
+
+<p>save the changes <code>:wq</code> and exit out</p>
+<h2>kubectx renaming</h2>
+<p>i also then use <code>kubectx</code> to rename all eks clusters, otherwise my terminal would be full before i even before writing anything</p>
+<p>for example if i had a eks cluster that was in a <code>developement</code> vpc i could</p>
+<div class="highlight"><pre><span></span><code>kubectx                 <span class="c1"># select the development eks cluster</span>
+kubectl <span class="nv">development</span><span class="o">=</span>.   <span class="c1"># updates the cluster to be named &quot;development&quot;</span>
+</code></pre></div>
+
+<h2>summary</h2>
+<p>and thats it for the moment, i really like <code>kube-ps1</code> for the easy knowledge that im in the right cluster and <code>kubectx</code> for the naming and ease to switch context between them. <code>Octant</code> ive not used much, but looks a good replacement for the risk / issues of using the <code>kubernetes dashboard</code>.</p>
       </div><!-- .entry-content -->
       <br /><br />
       <div class="article_meta">
@@ -144,6 +197,27 @@
     }})
   </script>
 
+  <script type="text/javascript">
+    window.addEventListener('load', function(){
+      var e = document.querySelectorAll(".email");
+      for (var i = 0; i < e.length; i++) {
+        var email = e[i].getAttribute("data-email")
+        var title = e[i].getAttribute("data-title")
+        if (email){
+          e[i].href = email.split("").reverse().join("");
+          e[i].removeAttribute("data-email");
+          e[i].removeAttribute("data-title");
+          e[i].removeAttribute("class");
+          if (title){
+            e[i].setAttribute("title", title);
+          }
+          else{
+            e[i].removeAttribute("title");
+          }
+        }
+      }
+    })
+  </script>
 
 
 

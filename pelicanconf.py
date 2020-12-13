@@ -38,7 +38,7 @@ DISPLAY_CATEGORIES_ON_MENU = True
 THEME = 'themes/voce'
 USER_LOGO_URL = 'images/07.png'
 DEFAULT_DATE_FORMAT = "%b %d, %Y"  
-
+MANGLE_EMAILS = True
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

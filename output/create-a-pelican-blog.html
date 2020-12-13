@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="staggerlee011">
-  <meta name="description" content="Create a pelican blog | mkdir blog cd blog python3 setup: pip install pelican, Markdown, typogrify create blog: pelican-quickstart theme: mkdir themes cd...">
+  <meta name="description" content="Create a pelican blog | Inital steps to create a pelican blog (like this one) are below: pre-reqs python3 installed python virtualenvironment installed...">
 
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">  
@@ -58,7 +58,7 @@
               </ul>
               </div>
               <div class="social">   
-                <a href="mailto:stebennettsjb@gmail.com" title="Email" >
+                <a data-email="moc.liamg@bjsttennebets:otliam" data-title="Email" title="You need javascript enabled to view this email" class="email">
 <i class="fa fa-envelope fa-lg"></i></a>
                 <a href="https://github.com/Staggerlee011" title="GitHub" >
 <i class="fa fa-github fa-lg"></i></a>
@@ -76,6 +76,19 @@
         </span><!-- end of .site-name -->
       </div><!-- end of #logo -->
         <div class="tagline">
+                <a href="/tag/blog.html" >blog (1)</a> &#124; 
+                <a href="/tag/brew.html" >brew (1)</a> &#124; 
+                <a href="/tag/gist.html" >gist (1)</a> &#124; 
+                <a href="/tag/github.html" >github (1)</a> &#124; 
+                <a href="/tag/kubernetes.html" >kubernetes (2)</a> &#124; 
+                <a href="/tag/pelican.html" >pelican (1)</a> &#124; 
+                <a href="/tag/python.html" >python (2)</a> &#124; 
+                <a href="/tag/terraform.html" >terraform (1)</a> &#124; 
+                <a href="/tag/ubuntu.html" >ubuntu (3)</a> &#124; 
+                <a href="/tag/vscode.html" >vscode (2)</a> &#124; 
+                <a href="/tag/windows.html" >windows (2)</a> &#124; 
+                <a href="/tag/wls.html" >wls (1)</a> &#124; 
+                <a href="/archives.html" >Archives (10)</a>
         </div>
     </div>
 
@@ -97,31 +110,72 @@
       </header><!-- .entry-header -->
       <div class="fb-like" data-href="/create-a-pelican-blog.html" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
       <div class="entry-content">
-        <div class="highlight"><pre><span></span><code><span class="err">mkdir blog</span>
-<span class="err">cd blog</span>
-<span class="err">python3 </span>
+        <p>Inital steps to create a pelican blog (like this one) are below:</p>
+<h2>pre-reqs</h2>
+<ul>
+<li>python3 installed</li>
+<li>python virtualenvironment installed</li>
+</ul>
+<h2>folder</h2>
+<p>set up a folder to work from</p>
+<div class="highlight"><pre><span></span><code>mkdir blog
+<span class="nb">cd</span> blog
 </code></pre></div>
 
-<p>setup:</p>
-<div class="highlight"><pre><span></span><code><span class="err">pip install pelican, Markdown, typogrify</span>
+<h2>set up python virtual environment</h2>
+<p>next we create our python virtual environment to manage our dependencies and activate it</p>
+<div class="highlight"><pre><span></span><code><span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">venv</span> <span class="n">env</span>
+<span class="n">source</span> <span class="n">env</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
 </code></pre></div>
 
-<p>create blog:</p>
-<div class="highlight"><pre><span></span><code><span class="err">pelican-quickstart</span>
+<p><strong>Note you should now see (env) at the start of your command prompt</strong></p>
+<h2>install python dependencies</h2>
+<p>install pelican and other dependencies</p>
+<div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">pelican</span><span class="p">,</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">typogrify</span>
+<span class="n">pip</span> <span class="n">freeze</span> <span class="o">&gt;</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
 </code></pre></div>
 
-<p>theme:</p>
+<h2>create the blog template</h2>
+<p>create a base pelican site, filling in the details as you see fit</p>
+<div class="highlight"><pre><span></span><code><span class="n">pelican</span><span class="o">-</span><span class="n">quickstart</span>
+</code></pre></div>
+
+<h2>test</h2>
+<p>you can now either run make devserver to test the site (i just keep this running while developing on pelican)</p>
+<div class="highlight"><pre><span></span><code>make devserver
+</code></pre></div>
+
+<h2>Add pelican themes</h2>
+<p>stylise your site with one of the many pelican themse (More can be found <a href="http://www.pelicanthemes.com/">here</a>), ill download my favourite voce</p>
 <div class="highlight"><pre><span></span><code><span class="err">mkdir themes</span>
 <span class="err">cd themes</span>
 <span class="err">git clone https://github.com/limbenjamin/voce</span>
+<span class="err">cd ..</span>
+</code></pre></div>
+
+<p>update <code>pelicanconf.py</code> with the new theme path</p>
+<div class="highlight"><pre><span></span><code><span class="n">THEME</span> <span class="o">=</span> <span class="s1">&#39;themes/voce&#39;</span>
 </code></pre></div>
 
 <h2>plugins</h2>
-<p>pip install pelican-gist</p>
-<p>pip freeze &gt; requirements.txt</p>
-<p>run:</p>
+<p>Add some plugins (i like <a href="https://github.com/streeter/pelican-gist">pelican-gist</a>)</p>
+<div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">pelican</span><span class="o">-</span><span class="n">gist</span>
+<span class="n">pip</span> <span class="n">freeze</span> <span class="o">&gt;</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</code></pre></div>
+
+<p>update your <code>pelicanconf.py</code> with the new plugin</p>
+<div class="highlight"><pre><span></span><code><span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;pelican_gist&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+</code></pre></div>
+
+<h2>add content</h2>
+<p>create a <code>new-blog.md</code> file in the <code>content</code> folder </p>
 <div class="highlight"><pre><span></span><code><span class="err">make devserver</span>
 </code></pre></div>
+
+<h2>view site</h2>
+<p>if you dont have the site up and running, run <code>make devserver</code> you should now have a new pelican site, with theme and a plugun running :)</p>
       </div><!-- .entry-content -->
       <br /><br />
       <div class="article_meta">
@@ -163,6 +217,27 @@
     }})
   </script>
 
+  <script type="text/javascript">
+    window.addEventListener('load', function(){
+      var e = document.querySelectorAll(".email");
+      for (var i = 0; i < e.length; i++) {
+        var email = e[i].getAttribute("data-email")
+        var title = e[i].getAttribute("data-title")
+        if (email){
+          e[i].href = email.split("").reverse().join("");
+          e[i].removeAttribute("data-email");
+          e[i].removeAttribute("data-title");
+          e[i].removeAttribute("class");
+          if (title){
+            e[i].setAttribute("title", title);
+          }
+          else{
+            e[i].removeAttribute("title");
+          }
+        }
+      }
+    })
+  </script>
 
 
 
