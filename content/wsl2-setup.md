@@ -11,4 +11,3 @@ This is a quick gist to install wsl2, download a disto and enable it.
 ## References
 
 - [Manually download Windows Subsystem for Linux distro packages](https://docs.microsoft.com/en-us/windows/wsl/install-manual)
-- 
