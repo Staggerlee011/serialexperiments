@@ -1,2 +1,3 @@
 # serialexperiments
-pelican blog site
+
+pelican blog site for `blog.serialexperiments.co.uk`

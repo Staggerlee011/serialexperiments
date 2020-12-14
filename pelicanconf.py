@@ -3,7 +3,7 @@
 
 AUTHOR = 'staggerlee011'
 SITENAME = 'serialexperiments'
-SITEURL = ''
+SITEURL = 'https://blog.serialexperiments.co.uk/'
 
 PATH = 'content'
 

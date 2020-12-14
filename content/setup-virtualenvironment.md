@@ -12,10 +12,16 @@ Quick note on running python virtual environment, its a repeative task that alwa
 python3 -m pip install virtualenv
 ```
 
-## create virtual environment
+## create virtual environment (shorthand)
 
 ``` python
 python3 -m venv env
+```
+
+## create virtual enivronment (specify version of python)
+
+``` python
+python3 -m virtualenv -p python3 venv
 ```
 
 ## activate environment

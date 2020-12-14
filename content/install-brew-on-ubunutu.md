@@ -1,4 +1,4 @@
-Title: Installing brew on ubunutu-18
+Title: Install brew on ubunutu-18
 Date: 2020-12-06
 Tags: brew, ubuntu
 Category: Runbook
