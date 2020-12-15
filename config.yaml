@@ -1,0 +1,70 @@
+baseURL: "https://blog.serialexperiments"
+languageCode: "en-us"
+title: "Serialexperiments"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# googleAnalytics: UA-123-45
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        menu:
+            main:
+                - name: Search
+                  url: search
+                  weight: 10
+                - name: Tags
+                  url: tags
+                  weight: 10
+                - name: Archive
+                  url: archive
+                  weight: 15
+
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: Serialexperiments
+    description: "Notes and runbooks from work and play with kubernetes, servereless, devops tooling and anything else i find of interest"
+    author: "Stephen Bennett"
+    # author: ["Stephen Bennett"] # multiple authors
+
+    #images: "<link or path of image for opengraph, twitter-cards>"
+
+    ShowReadingTime: true
+    ShowShareButtons: true
+    comments: true
+    defaultTheme: dark
+    disableThemeToggle: false
+    disableSpecial1stPost: false
+
+    label:
+        text: "SerialExperiments"
+        #icon: /apple-touch-icon.png
+        #iconHeight: 35
+
+    # home-info mode
+    homeInfoParams:
+        Title: "Hi there \U0001F44B"
+        Content: These are my notes and runbooks from work and play with kubernetes, servereless, devops tooling and anything else i find of interest
+
+    socialIcons:
+        - name: linkedin
+          url: "https://www.linkedin.com/in/stephenjohnbennett/"
+        - name: github
+          url: "https://github.com/Staggerlee011"
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary

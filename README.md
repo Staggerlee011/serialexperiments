@@ -1,3 +1,3 @@
-# serialexperiments
+# Serial experiments
 
-pelican blog site for `blog.serialexperiments.co.uk`
+This is the source code for `blog.serialexperiments.co.uk` currently written using `hugo` and the `papermod` theme.
