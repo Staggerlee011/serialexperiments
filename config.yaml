@@ -62,6 +62,8 @@ params:
           url: "https://www.linkedin.com/in/stephenjohnbennett/"
         - name: github
           url: "https://github.com/Staggerlee011"
+        - name: rss
+          url: "index.xml"
 
 outputs:
     home:
