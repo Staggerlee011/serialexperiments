@@ -8,7 +8,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-# googleAnalytics: UA-123-45
+googleAnalytics: G-K6D0JZFKJC
 
 minify:
     disableXML: true
@@ -61,9 +61,10 @@ params:
         - name: linkedin
           url: "https://www.linkedin.com/in/stephenjohnbennett/"
         - name: github
-          url: "https://github.com/Staggerlee011"
+          url: "https://github.com/Staggerlee011"      
         - name: rss
           url: "index.xml"
+
 
 outputs:
     home:
