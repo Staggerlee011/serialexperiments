@@ -21,4 +21,4 @@ For our teams we manage this via still creating the s3 bucket in Terraform and k
 
 The below is a gist example of the code we use, id suggest also adding a `version.tf` in the folder that matches the rest of your workspaces.
 
-[gist:id=b08b80dad659cd549030e5855a798673,file=terraform-statefile-bucket.tf]
+{{< gist Staggerlee011 b08b80dad659cd549030e5855a798673 "terraform-statefile-bucket.tf" >}}
