@@ -9,7 +9,7 @@ tags: [
 
 Todo-tree is a handy little extension to track issues and comments in your code (Im not going to get into the debt of weather you should put a TODO comment in code or in story board that for you decide). It adds a new pane to vscode letting you quickly look a repo/pages outstanding issues, or things to note see blow
 
-![Image of vscode extension todo-tree](static/image01.png)
+![Image of vscode extension todo-tree](static/vscode-todotree/image01.png)
 
 Its really simple to use (you add a `TODO` into your code and new line pop ups in the pane, showing where it is), but I couldnt find the default options where on the extensions site: `https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree` or an easy guide to customize it should i want to.
 
@@ -29,7 +29,7 @@ NOTE: this is a note
 
 You can add a new tag via opening the `Command Palette` and typing in `Todo Tree: add tag` you then populate it with the name of the tag (say `NOTE`) and job done you can add a note (it looks like this:)
 
-![Default new tag example](static/image02.png)
+![Default new tag example](static/vscode-todotree/image02.png)
 
 As you can see it uses the same icon as `TODO`, so while quick and easy to add, not great.
 
@@ -78,6 +78,6 @@ As a note you can pick the icons from the [octicons](https://primer.style/octico
 
 It gives me the below
 
-![My todo-tree settings](static/image03.png)
+![My todo-tree settings](static/vscode-todotree/image03.png)
 
 And thats it. hope this helps.
