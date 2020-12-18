@@ -29,7 +29,7 @@ NOTE: this is a note
 
 You can add a new tag via opening the `Command Palette` and typing in `Todo Tree: add tag` you then populate it with the name of the tag (say `NOTE`) and job done you can add a note (it looks like this:)
 
-![Default new tag example](static/vscode-todotree/image02.png)
+![Default new tag example](vscode-todotree/image02.png)
 
 As you can see it uses the same icon as `TODO`, so while quick and easy to add, not great.
 
@@ -78,6 +78,6 @@ As a note you can pick the icons from the [octicons](https://primer.style/octico
 
 It gives me the below
 
-![My todo-tree settings](static/vscode-todotree/image03.png)
+![My todo-tree settings](vscode-todotree/image03.png)
 
 And thats it. hope this helps.
