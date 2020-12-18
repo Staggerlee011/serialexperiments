@@ -74,10 +74,8 @@ Mine currently is currently:
 
 I was trying to get the colours from the ubuntu wsl as like them against the dark theme in vscode, but there not quiet right. but after spending far to long playing around with it this will do for now! :)
 
-As a note you can pick the icons from the [octicons](https://primer.style/octicons/)
-
 It gives me the below
 
 ![My todo-tree settings](vscode-todotree/image03.png)
 
-And thats it. hope this helps.
+As a note you can pick the icons from the [octicons](https://primer.style/octicons/) and thats it. hope this helps.
