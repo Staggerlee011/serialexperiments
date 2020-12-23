@@ -1,7 +1,7 @@
 ---
-title: "setup of python virtualenvironment"
+title: "Setup of Python Virtualenvironment"
 date: "2019-12-06"
-description: "Setup python virtualenvironment for windows or ubuntu"
+description: "Setup python virtualenvironment for Windows or Ubuntu"
 tags: [
     "python",
 ]

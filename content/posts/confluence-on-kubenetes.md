@@ -1,7 +1,7 @@
 ---
 title: "Deploying Confluence to Kubernetes"
 date: "2019-12-23"
-description: "Run confluence on kuberetes"
+description: "Run Confluence on Kuberetes"
 tags: [
     "kubernetes",
 ]

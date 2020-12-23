@@ -1,7 +1,7 @@
 ---
-title: "vscode terminal set to wsl"
+title: "VS Code Terminal Set to WSL"
 date: "2019-12-08"
-description: "configure vscode terminal to use wsl"
+description: "Configure VS Code terminal to use WSL"
 tags: [
     "wsl",
     "vscode"

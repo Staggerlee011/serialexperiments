@@ -1,7 +1,7 @@
 ---
-title: "port-forwarding pgadmin"
+title: "Port-forwarding pgadmin"
 date: "2019-12-15"
-description: "run for kubernetes port-forwarding pgadmin"
+description: "Kubernetes port-forwarding pgadmin"
 tags: [
     "kubernetes",
 ]

@@ -1,7 +1,7 @@
 ---
-title: "Terraform remote statefile creation"
+title: "Terraform Remote Statefile Creation"
 date: "2019-12-07"
-description: "Terraform code to generate a secure s3 bucket for remote state"
+description: "Terraform code to generate a secure S3 bucket for remote state"
 tags: [
     "terraform",
 ]

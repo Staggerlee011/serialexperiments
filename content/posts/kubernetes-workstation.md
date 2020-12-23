@@ -1,5 +1,5 @@
 ---
-title: "Kubernetes workstation setup"
+title: "Kubernetes Workstation Setup"
 date: "2019-12-14"
 description: "My workstation setup for kubernetes"
 tags: [

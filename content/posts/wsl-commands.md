@@ -1,7 +1,7 @@
 ---
-title: "wsl helpful commands"
+title: "WSL Helpful Commands"
 date: "2019-12-09"
-description: "Set of helpful wsl commands"
+description: "Set of helpful WSL commands"
 tags: [
     "wsl",
 ]
