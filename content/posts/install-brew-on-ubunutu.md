@@ -10,15 +10,15 @@ tags: [
 
 Its really simple and to be honest doesnt need a blog post, but since i managed to ignore all the warning signs, someone else might :). 
 
-## pre-reqs
+## Pre-reqs
 
 none
 
-## steps
+## Steps
 
 steps can be followed by reading the install as it happens, if you miss it like i did! read on:
 
-### install brew
+### Install brew
 
 the url and home of brew for linux is here: `https://brew.sh/` (this may have an updated url so please check if you get errors)
 
@@ -26,7 +26,7 @@ the url and home of brew for linux is here: `https://brew.sh/` (this may have an
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-### configure brew
+### Configure brew
 
 this is where i messed up! apon finishing the install, it feeds you lots of HELPFUL info saying you need to update your `PATH` and suggests installing some other software, i ignored this and spent a few hours moaning to my team that things dont work like they should and trying to workout why i could install things but not use them ><
 
@@ -44,7 +44,7 @@ sudo apt-get install build-essential
 brew install gcc
 ```
 
-### test
+### Test
 
 thats it, you should now be good to go and install all the lovely software and have it work properly!
 

@@ -9,7 +9,7 @@ tags: [
 
 This is my current setup for kubernetes (running on wsl ubunutu-18)
 
-## install software
+## Install software
 
 I currently use:
 
@@ -24,7 +24,7 @@ All of these can be installed via brew:
 brew install kubectl kube-ps1 kubectx octant
 ```
 
-### configure kube-ps1
+### Configure kube-ps1
 
 after installing kube-ps1 you will also need to update `~/.bashrc`
 
@@ -61,7 +61,7 @@ alias k='kubectl'
 
 save the changes `:wq` and exit out
 
-## kubectx renaming
+## Kubectx renaming
 
 i also then use `kubectx` to rename all eks clusters, otherwise my terminal would be full before i even before writing anything
 
@@ -72,6 +72,6 @@ kubectx                 # select the development eks cluster
 kubectl development=.   # updates the cluster to be named "development"
 ```
 
-## summary
+## Summary
 
 and thats it for the moment, i really like `kube-ps1` for the easy knowledge that im in the right cluster and `kubectx` for the naming and ease to switch context between them. `Octant` ive not used much, but looks a good replacement for the risk / issues of using the `kubernetes dashboard`.

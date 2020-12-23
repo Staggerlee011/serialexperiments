@@ -10,7 +10,7 @@ tags: [
 
 After getting myself into far to many messes with using both powershell and wsl, im moving uninstalling all things windows and trying to only run `work` apps via the wsl ubunutu image. with that i stil use vscode for all my coding and having the terminal open for all comamnds that i need. To update it to use wsl is super easy via
 
-## steps to update vscode default terminal
+## Steps to update vscode default terminal
 
 - open the terminal
 - select the drop on the right hand side dropdown bar
@@ -24,7 +24,7 @@ After getting myself into far to many messes with using both powershell and wsl,
 
 - select WSL bash
 
-## common issues
+## Common issues
 
 i found that my default wsl image was docker when setting this up. So after completing the above I would then get an error saying 
 
@@ -54,7 +54,7 @@ confirm via running `wslconfig` again
 
 You should now be able to open wsl from vscode
 
-## references
+## References
 
 - [vscode termianl integrations](https://code.visualstudio.com/docs/editor/integrated-terminal)
 - [troubleshooting vscode terminal launch](https://code.visualstudio.com/docs/supporting/troubleshoot-terminal-launch)

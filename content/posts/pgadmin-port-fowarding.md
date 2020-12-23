@@ -25,6 +25,8 @@ port-forward into pgadmin
 kubectl port-forward pgadmin 8080:80
 ```
 
+Open your favourite browser and go to `http://localhost:8080`
+
 And there it is you can now enjoy the joys the pgadmin to connect to your private database server without the need of jump boxes, or external load balancers etc. All locked down to only those than connecto to your cluster via `kubectl`
 
 ## Clean up
