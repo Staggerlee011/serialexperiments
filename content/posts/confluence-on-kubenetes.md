@@ -7,7 +7,7 @@ tags: [
 ]
 ---
 
-After spending some time trying to get different confluence `HELM` charts to work and failing (Im sure it was me not the code!), i gave up and wrote my own manifest files to deploy it. You can find the code in my github repo: [atlassian-docker](https://github.com/Staggerlee011/atlassian-docker).
+After spending some time trying to get different confluence `HELM` charts to work and failing (Im sure it was me not the code!), i gave up and wrote my own manifest files to deploy it. You can find the code in my github repo: [atlassian-docker](https://github.com/Staggerlee011/atlassian-docker/tree/master/kubernetes/confluence).
 
 The deployment gives you:
 
