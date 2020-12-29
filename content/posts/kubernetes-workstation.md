@@ -32,14 +32,14 @@ after installing kube-ps1 you will also need to update `~/.bashrc`
 sudo vim ~/.bashrc
 ```
 
-insert into the file **MAKE SURE TO DO THIS AT THE BOTTOM OF THE PAGE!** the code below and save and exit `:wq`
+`insert` into the file **MAKE SURE TO DO THIS AT THE BOTTOM OF THE PAGE!** the code below and save and exit `:wq`
 
 ``` bash
 source "$(brew --prefix)/opt/kube-ps1/share/kube-ps1.sh"
 PS1='$(kube_ps1)'$PS1
 ```
 
-once youve saved the file re `source` it and it should load up in your terminal
+Once you've saved the file re `source` it and it should load up in your terminal
 
 ``` bash
 source ~/.bashrc
@@ -63,9 +63,9 @@ save the changes `:wq` and exit out
 
 ## Kubectx renaming
 
-i also then use `kubectx` to rename all eks clusters, otherwise my terminal would be full before i even before writing anything
+I also then use `kubectx` to rename all my EKS clusters, otherwise my terminal would be full before I even started writing anything!
 
-for example if i had a eks cluster that was in a `developement` vpc i could
+For example if I had a EKS cluster that was in a `developement` VPC I could
 
 ``` bash
 kubectx                 # select the development eks cluster
@@ -74,4 +74,4 @@ kubectl development=.   # updates the cluster to be named "development"
 
 ## Summary
 
-and thats it for the moment, i really like `kube-ps1` for the easy knowledge that im in the right cluster and `kubectx` for the naming and ease to switch context between them. `Octant` ive not used much, but looks a good replacement for the risk / issues of using the `kubernetes dashboard`.
+and that's it for the moment, I really like `kube-ps1` for the easy knowledge that I'm in the right cluster and `kubectx` for the naming and ease to switch context between them. `Octant` I've not used much, but looks a good replacement for the risk / issues of using the `kubernetes dashboard`.

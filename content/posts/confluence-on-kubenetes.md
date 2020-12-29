@@ -27,7 +27,7 @@ You will need to have the `EFS CSI` or someother variation to allow kubernetes t
 
 - `Kubernetes` deployed (I use EKS)
 - Either upload a certificate or generate one for `HTTPS`
-- `RDS` Postgres database accessable by the EKS cluster
+- `RDS` Postgres database accessible by the EKS cluster
 - `EFS` deployed with connection to the EKS cluster
 
 ## Update Kubernetes Manifests
@@ -36,7 +36,7 @@ Update the below manifests settings to match your environment.
 
 ### deployment.yml
 
-The below values need updating to connect to the datbase:
+The below values need updating to connect to the database:
 
 - Update `ATL_JDBC_URL` value
 - Update `ATL_JDBC_USER` value
@@ -48,7 +48,7 @@ Set the proxy name for your URL (ie `confluence.mysite.com`)
 
 ### service.yml
 
-Add the ARN for your certifcate:
+Add the ARN for your certificate:
 
 - Update `service.beta.kubernetes.io/aws-load-balancer-ssl-cert` with the cert `ARN`
 

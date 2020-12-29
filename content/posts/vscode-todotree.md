@@ -7,7 +7,7 @@ tags: [
 ]
 ---
 
-Todo-tree is a handy little extension to track issues and comments in your code (Im not going to get into the debt of weather you should put a TODO comment in code or in story board that for you decide). It adds a new pane to vscode letting you quickly look a repo/pages outstanding issues, or things to note see blow
+Todo-tree is a handy little extension to track issues and comments in your code (I'm not going to get into the debt of weather you should put a TODO comment in code or in story board that for you decide). It adds a new pane to vscode letting you quickly look a repo/pages outstanding issues, or things to note see blow
 
 ![Image of vscode extension todo-tree](/vscode-todotree/image01.PNG)
 
