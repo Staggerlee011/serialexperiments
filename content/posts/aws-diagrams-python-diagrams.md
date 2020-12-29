@@ -75,4 +75,4 @@ This creates a file called `my-app.png` which looks like this:
 
 ![Example diagram from python diagram](/python-diagrams/my-app.png)
 
-And there we have it, there's a lot of nice examples in the diagrams repo to look through, but I'm currently a bit of a fan to say the least.
+And there we have it, there's a lot of nice examples in the diagrams repo to look through, but I'm currently a bit of a fan to say the least. I think it would fall down if you're trying to diagram a AZ, EC2 heavy environment and I've not found a good example of doing that, but for simple diags it looks a really nice choice.
