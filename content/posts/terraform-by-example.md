@@ -1,5 +1,5 @@
 ---
-title: "Terraform by Example"
+title: "Terraform by example"
 date: "2021-01-07"
 description: "Examples of using the Terraform CLI"
 tags: [
