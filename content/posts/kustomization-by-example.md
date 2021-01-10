@@ -11,11 +11,15 @@ tags: [
 
 ## Run kustomization file
 
+To `apply` or `delete` a set of `manifests` you use the `-k` command
+
 ``` bash
 kubectl apply -k k8s/my-app/overlays/production/
 ```
 
 ## View generated output of kustomization
+
+To view the `manifest` that gets generated from `kustomize` you can the below command pointing at the the `base` or `overlays/env` folder
 
 ``` bash
 kubectl kustomize k8s/my-app/overlays/production/
@@ -23,7 +27,7 @@ kubectl kustomize k8s/my-app/overlays/production/
 
 ## base settings
 
-below are examples of the `base` `kustomization` file
+Below are examples of the `base` `kustomization` file
 
 ### resources
 
@@ -42,7 +46,7 @@ resources:
 
 ## overlays settings
 
-below are examples of overlays for various manifests and options.
+Below are examples of overlays for various manifests and options.
 
 ### image or tag
 
