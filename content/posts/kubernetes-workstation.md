@@ -13,20 +13,49 @@ This is my current setup for kubernetes (running on wsl ubunutu-18)
 
 I currently use:
 
-- kubectl
-- kube-ps1
-- kubectx
-- octant
+### kubectl
+
+Standard k8s cli
+
+### kube-ps1
+
+Visualizes which k8s cluster you are connected to
+
+### kubectx
+
+Easily switch between k8s clusters and re-name them!
+
+### octant
+
+Web based dashboard that uses port-forwarding to access the k8s cluster
+
+### Install via Brew
 
 All of these can be installed via brew:
 
 ``` bash
 brew install kubectl kube-ps1 kubectx octant
+
 ```
+## Set up kubectl alias
+
+As someone who cant spell or type, alias's are my friend, I use the common alias of `k = kubectl` to try and lower my command line mistakes
+
+``` bash
+sudo vim ~/.bash_aliases
+```
+
+Insert into the file the below:
+
+``` bash
+alias k='kubectl'
+```
+
+Save the changes `:wq` and exit out
 
 ### Configure kube-ps1
 
-after installing kube-ps1 you will also need to update `~/.bashrc`
+After installing kube-ps1 you will also need to update `~/.bashrc`
 
 ``` bash
 sudo vim ~/.bashrc
@@ -44,23 +73,6 @@ Once you've saved the file re `source` it and it should load up in your terminal
 ``` bash
 source ~/.bashrc
 ```
-
-## Set up kubectl alias
-
-As someone who cant spell or type, alias's are my friend, i just the common alias of `k = kubectl`
-
-``` bash
-sudo vim ~/.bash_aliases
-```
-
-insert into the file the below:
-
-``` bash
-alias k='kubectl'
-```
-
-save the changes `:wq` and exit out
-
 ## Kubectx renaming
 
 I also then use `kubectx` to rename all my EKS clusters, otherwise my terminal would be full before I even started writing anything!
