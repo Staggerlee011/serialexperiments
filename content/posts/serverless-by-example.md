@@ -24,11 +24,14 @@ At present I'm using the `serverless framework` to deploy and manage all my `lam
     - [Usage](#usage)
     - [Add serverless-iam-roles-per-function](#add-serverless-iam-roles-per-function)
     - [Add to servereless.yml](#add-to-serverelessyml)
-- [Serverless.yml setup](#serverlessyml-setup)
+- [Serverless.yml Functions](#serverlessyml-functions)
   - [CRON job](#cron-job)
   - [Using SSM values](#using-ssm-values)
   - [Deploy function to VPC](#deploy-function-to-vpc)
-- [References](#references)
+- [Serverless.yml Resources](#serverlessyml-resources)
+  - [Dynamodb](#dynamodb)
+    - [References](#references)
+- [References](#references-1)
 
 <!-- /TOC -->
 
@@ -176,7 +179,7 @@ plugins:
   - serverless-iam-roles-per-function
 ```
 
-## Serverless.yml setup
+## Serverless.yml Functions
 
 Collection if snippets to use in `serverless.yml`
 
@@ -250,6 +253,46 @@ functions:
       - ${ssm:/global/subnets/intra/az/a/id~true}
       - ${ssm:/global/subnets/intra/az/b/id~true}
 ```
+
+## Serverless.yml Resources
+
+Collection of `resources` snippets.
+
+### Dynamodb
+
+Example `dynamodb` table
+
+- KeyType - The role that the key attribute will assume:
+  - HASH - partition key
+  - RANGE - sort key
+
+``` yml
+resources: 
+  Resources:
+    Templates:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: Templates
+        AttributeDefinitions:
+          - AttributeName: user_id
+            AttributeType: S
+          - AttributeName: template_id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: user_id
+            KeyType: HASH
+          - AttributeName: template_id
+            KeyType: RANGE
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+```
+
+#### References
+
+- [AWS Dynamodb Create Table](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_CreateTable.html#DDB-CreateTable-request-AttributeDefinitions)
+- [Serverless Dynamodb](https://www.serverless.com/dynamodb)
+
 
 ## References
 
