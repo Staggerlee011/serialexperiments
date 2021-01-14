@@ -11,7 +11,7 @@ This is my current setup for kubernetes (running on WSL ubunutu-18)
 
 ## Install software
 
-I currently use:
+I currently use the following software to manage and interact with `k8s`:
 
 ### Kubectl
 
