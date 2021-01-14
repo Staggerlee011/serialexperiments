@@ -1,5 +1,5 @@
 ---
-title: "kustomization by example"
+title: "Kustomization by Example"
 date: "2019-12-15"
 description: "Example syntax for Kustomization files"
 tags: [

@@ -1,5 +1,5 @@
 ---
-title: "VS Code Todo Tree"
+title: "VSCode Todo Tree"
 date: "2019-12-17"
 description: "Basic usage of the vscode extension todo-tree"
 tags: [
