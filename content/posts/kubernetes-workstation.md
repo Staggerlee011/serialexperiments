@@ -7,7 +7,7 @@ tags: [
 ]
 ---
 
-This is my current setup for kubernetes (running on wsl ubunutu-18)
+This is my current setup for kubernetes (running on WSL ubunutu-18)
 
 ## Install software
 
