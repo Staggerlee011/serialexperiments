@@ -1,6 +1,6 @@
 ---
 title: "Deploying Confluence to Kubernetes"
-date: "2019-12-23"
+date: "2020-12-23"
 description: "Run Confluence on Kuberetes"
 tags: [
     "kubernetes",

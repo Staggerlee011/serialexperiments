@@ -1,6 +1,6 @@
 ---
 title: "Python Dependency Management"
-date: "2019-12-29"
+date: "2020-12-29"
 description: "Basic python dependency management steps"
 tags: [
     "python",

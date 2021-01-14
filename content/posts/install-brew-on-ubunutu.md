@@ -1,6 +1,6 @@
 ---
 title: "Install Brew on Ubunutu-18"
-date: "2019-12-03"
+date: "2020-12-03"
 description: "Steps to install and configure brew for Ubuntu-18"
 tags: [
     "brew",

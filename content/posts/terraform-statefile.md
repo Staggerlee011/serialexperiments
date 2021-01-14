@@ -1,6 +1,6 @@
 ---
 title: "Terraform Remote Statefile Creation"
-date: "2019-12-07"
+date: "2020-12-07"
 description: "Terraform code to generate a secure S3 bucket for remote state"
 tags: [
     "terraform",

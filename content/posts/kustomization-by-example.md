@@ -1,6 +1,6 @@
 ---
 title: "Kustomization by Example"
-date: "2019-12-15"
+date: "2020-12-15"
 description: "Example syntax for Kustomization files"
 tags: [
     "kubernetes",

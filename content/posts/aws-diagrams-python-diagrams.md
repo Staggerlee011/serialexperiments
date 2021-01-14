@@ -1,6 +1,6 @@
 ---
 title: "AWS Diagrams via Python Diagrams"
-date: "2019-12-30"
+date: "2020-12-30"
 description: "Create AWS diagrams from python"
 tags: [
     "python",

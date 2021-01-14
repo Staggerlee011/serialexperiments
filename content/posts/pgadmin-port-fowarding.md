@@ -1,6 +1,6 @@
 ---
 title: "Port-forwarding pgadmin"
-date: "2019-12-15"
+date: "2020-12-15"
 description: "Kubernetes port-forwarding pgadmin"
 tags: [
     "kubernetes",
