@@ -36,13 +36,44 @@ Easily switch between k8s clusters and re-name them!
 Web based dashboard that uses port-forwarding to access the k8s cluster
 
 - [Link to Octant](https://github.com/vmware-tanzu/octant)
-  
+
+### KubeLinter
+
+Analyzes Kubernetes YAML files and Helm charts, and checks them against a variety of best practices, with a focus on production readiness and security.
+
+- [Link to KubeLinter](https://github.com/stackrox/kube-linter)
+### Inspektor Gadget
+
+Collection of tools to debug and inspect kubernetes applications
+
+- [Link to Inpsecktor Gadget](https://github.com/kinvolk/inspektor-gadget)
+
+### ssm-secret
+
+Allow import/export of kubernetes `secrets` to/from AWS `SSM`
+
+- [Link to kubectl-ssm-secret](https://github.com/pr8kerl/kubectl-ssm-secret)
+
 ### Install via Brew
 
 All of these can be installed via brew:
 
 ``` bash
-brew install kubectl kube-ps1 kubectx octant
+brew install kubectl kube-ps1 kubectx octant kube-linter
+```
+
+### Install via Krew
+
+`krew` is a tool that allows you to add plugins to `kubectl`
+
+- [Link to Krew](https://github.com/kubernetes-sigs/krew)
+- [Install Krew](https://krew.sigs.k8s.io/docs/user-guide/setup/install/)
+
+**Note run:** `source ~/.bashrc` **to refresh wsl**
+
+``` bash
+kubectl krew install gadget
+kubectl krew install ssm-secret
 ```
 
 ## Set up kubectl alias
