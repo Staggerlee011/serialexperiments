@@ -4,6 +4,7 @@ date: "2021-01-15"
 description: "Quick example of using the profile switches for macOS/Linux and Windows"
 tags: [
     "ecr",
+    "aws",
 ]
 ---
 

@@ -4,6 +4,7 @@ date: "2021-01-15"
 description: "Code for connecting to a new EKS Cluster"
 tags: [
     "kubernetes",
+    "aws",
 ]
 ---
 

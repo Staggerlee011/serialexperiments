@@ -4,6 +4,7 @@ date: "2020-12-15"
 description: "Kubernetes port-forwarding pgadmin"
 tags: [
     "kubernetes",
+    "database",
 ]
 ---
 
