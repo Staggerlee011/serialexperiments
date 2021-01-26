@@ -94,6 +94,11 @@ This will create a new `manifest` called `wordpress-user-password-secure.yml` wh
 k create secret generic wordpress-user-password --dry-run=client --from-literal password=MySuperSecretPassword --output yaml | kubeseal --format yaml | tee wordpress-user-password-secure.yml
 ```
 
+## Notes on sealedsecrets
+
+- You cant update the `sealedsecret` after its created and deploy it. It wont work! (This is a good thing)
+- You cant deploy the same secret to different namespaces. It wont work! (This is also a good thing)
+  
 ## Resources
 
 - [GitHub Repo for Sealed-Secrets](https://github.com/bitnami-labs/sealed-secrets)
