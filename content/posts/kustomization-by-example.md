@@ -74,7 +74,7 @@ bases:
 - ../../base
 
 images:
-- name: nginx
+- name: nginx # note this is the image: tag not the name of the container
   newName: <NEW ECR PATH>/nginx
   newTag: 3.4.5
 ```
