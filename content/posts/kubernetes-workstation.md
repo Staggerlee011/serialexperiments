@@ -4,10 +4,11 @@ date: "2020-12-14"
 description: "My workstation setup for kubernetes"
 tags: [
     "kubernetes",
+    "workstation",
 ]
 ---
 
-This is my current setup for kubernetes (running on WSL ubunutu-18)
+This is my current setup for kubernetes (running on WSL2 ubunutu-18)
 
 ## Install software
 
@@ -37,32 +38,49 @@ Web based dashboard that uses port-forwarding to access the k8s cluster
 
 - [Link to Octant](https://github.com/vmware-tanzu/octant)
 
+### KubeSeal
+
+Aka `sealedsecrets`. Used to encrypt secrets on file.
+
+-[sealedsecrets](https://github.com/bitnami-labs/sealed-secrets)
+
+### Kustomize
+
+kubectl comes with a very old version `kustomzise` its well worth sticking on the latest version.
+
+-[kustomize](https://kustomize.io/)
+
 ### KubeLinter
 
-Analyzes Kubernetes YAML files and Helm charts, and checks them against a variety of best practices, with a focus on production readiness and security.
+Analyses Kubernetes YAML files and Helm charts, and checks them against a variety of best practices, with a focus on production readiness and security.
 
 - [Link to KubeLinter](https://github.com/stackrox/kube-linter)
+
+### bash-completion
+
+So you can get tab completion with `kubernetes`
+
 ### Inspektor Gadget
 
-Collection of tools to debug and inspect kubernetes applications
+Collection of tools to debug and inspect `kubernetes` applications
 
 - [Link to Inpsecktor Gadget](https://github.com/kinvolk/inspektor-gadget)
 
 ### ssm-secret
 
-Allow import/export of kubernetes `secrets` to/from AWS `SSM`
+Allow import/export of `kubernetes` `secrets` to/from AWS `SSM`
 
 - [Link to kubectl-ssm-secret](https://github.com/pr8kerl/kubectl-ssm-secret)
 
-### Install via Brew
+## Install via Brew
 
 All of these can be installed via brew:
 
 ``` bash
-brew install kubectl kube-ps1 kubectx octant kube-linter
+brew install kubectl kube-ps1 kubectx octant kube-linter kustomize kubeseal bash-completion
 ```
 
-### Install via Krew
+## Install via Krew
 
 `krew` is a tool that allows you to add plugins to `kubectl`
 
@@ -76,9 +94,13 @@ kubectl krew install gadget
 kubectl krew install ssm-secret
 ```
 
-## Set up kubectl alias
+## Set up kubectl alias and tab completion
 
-As someone who cant spell or type, alias's are my friend, I use the common alias of `k = kubectl` to try and lower my command line mistakes
+As someone who cant spell or type, alias's / tab completion are my friend 
+
+### Alias
+
+I use the common alias of `k = kubectl` to try and lower my command line mistakes
 
 ``` bash
 sudo vim ~/.bash_aliases
@@ -92,7 +114,16 @@ alias k='kubectl'
 
 Save the changes `:wq` and exit out
 
-### Configure kube-ps1
+### Tab Completion
+
+Not something I'm a big fan off as it seems very and unresponsive. But worth having anyway.
+
+``` bash
+source <(kubectl completion bash)
+echo 'source <(kubectl completion bash)' >>~/.bashrc
+```
+
+## Configure kube-ps1
 
 After installing kube-ps1 you will also need to update `~/.bashrc`
 
