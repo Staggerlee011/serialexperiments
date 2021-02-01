@@ -7,14 +7,17 @@ tags: [
 ]
 ---
 
-```
+We currently have a `terraform` code in multiple versions at present. Below are the basic steps to upgrade code from `0.12` - `0.14`. Note this solution is dependant on using `tfenv` which lets you install multiple versions of `terraform`.
+
+First here's the error you will see:
+
+``` bash
 Upgrading to Terraform v0.14 - Terraform by HashiCorpwww.terraform.io › upgrade-guides › 0-14
 You will need to successfully complete a terraform apply at least once under Terraform v0. 13
-```
+
 https://www.terraform.io/upgrade-guides/0-14.html
+```
 
-
-Use `tfenv`
 
 remove terrafomr (may have to remove terragrunt as well if you use it)
 
@@ -30,13 +33,7 @@ list all versions installed@ tfenv list
 
 get error: 
 
-this is because you have set which version of tf to use. once defined error goes away
 
-```
-$ tfenv list
-cat: /home/linuxbrew/.linuxbrew/Cellar/tfenv/2.0.0/version: No such file or directory
-Version could not be resolved (set by /home/linuxbrew/.linuxbrew/Cellar/tfenv/2.0.0/version or tfenv use <version>)
-```
 
 use specific version of tf
 
