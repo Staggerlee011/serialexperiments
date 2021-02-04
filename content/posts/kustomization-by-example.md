@@ -1,13 +1,15 @@
 ---
-title: "Kustomization by Example"
+title: "Kubectl Kustomization by Example"
 date: "2021-01-10"
-description: "Example syntax for Kustomization files"
+description: "Example syntax for Kustomization files using kubectl"
 tags: [
     "kubernetes",
 ]
 ---
 
-`Kustomize` is a standalone tool to customize Kubernetes objects through a `kustomization` file. It has been part of `kubectl` since `v1.14`
+NOTE: This guide is for using `kustomize` in `kubectl` which uses a old version of `kustomize` this means your writing a lot of `deprecated` codes like using `bases`. 
+
+`Kustomize` is a standalone tool to customize Kubernetes objects through a `kustomization` file. It has been part of `kubectl` since `v1.14` These examples are based on using the built in version of `kubectl` but it is strongly suggested to migrate away and use the latest version.
 
 ## Run kustomization file
 
