@@ -152,7 +152,7 @@ For example if I had a EKS cluster that was in a `developement` VPC I could
 
 ``` bash
 kubectx                 # select the development eks cluster
-kubectl development=.   # updates the cluster to be named "development"
+kubectx development=.   # updates the cluster to be named "development"
 ```
 
 ## Summary
