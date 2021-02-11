@@ -5,6 +5,7 @@ description: "Code for connecting to a new EKS Cluster"
 tags: [
     "kubernetes",
     "aws",
+    "eks"
 ]
 ---
 
