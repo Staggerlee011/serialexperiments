@@ -4,7 +4,9 @@ date: "2020-12-08"
 description: "Configure VS Code terminal to use WSL"
 tags: [
     "wsl",
-    "vscode"
+    "vscode",
+    "workstation"
+    
 ]
 ---
 
@@ -16,11 +18,7 @@ After getting myself into far to many messes with using both powershell and wsl,
 - select the drop on the right hand side dropdown bar
 - select "Select default shell"
 
-![image of terminal](images/vscode-terminal-wsl-01.JPG)
-
 **This opens the command palette with the options you cna switch to**
-
-![vscode command palette](images/vscode-terminal-wsl-02.JPG)
 
 - select WSL bash
 
@@ -31,8 +29,6 @@ i found that my default wsl image was docker when setting this up. So after comp
 ``` powershell
 The terminal process "C:\Windows\System32\wsl.exe" failed to launch (exit code: 1).
 ```
-
-![error from vscode for wsl](images/vscode-terminal-wsl-03.png)
 
 The fix is to update wsl and set the ubuntu image as your default wsl:
   
@@ -50,11 +46,9 @@ wslconfig.exe /setdefault Ubuntu-18.04
 
 confirm via running `wslconfig` again
 
-![wslconfig default image](images/vscode-terminal-wsl-04.png)
-
 You should now be able to open wsl from vscode
 
 ## References
 
-- [vscode termianl integrations](https://code.visualstudio.com/docs/editor/integrated-terminal)
+- [vscode terminal integrations](https://code.visualstudio.com/docs/editor/integrated-terminal)
 - [troubleshooting vscode terminal launch](https://code.visualstudio.com/docs/supporting/troubleshoot-terminal-launch)

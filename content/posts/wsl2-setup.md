@@ -3,6 +3,7 @@ title: "WSL2 Setup and Configuration"
 date: "2020-12-10"
 description: "Quick script to install and set up wsl2"
 tags: [
+    "workstation",
     "wsl",
 ]
 ---
