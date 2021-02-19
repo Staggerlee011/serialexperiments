@@ -21,7 +21,7 @@ Shortcut: `ctrl+k ctrl+t`
 
 Either option, opens up the `Command palette` and lists out all themes you currently have installed ordered by theme type.
 
-![Example list of themes](vscode-themes/list-themes.png)
+![Example list of themes](/vscode-themes/list-themes.png)
 
 ## Change icon theme
 
