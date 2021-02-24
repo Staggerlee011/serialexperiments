@@ -96,6 +96,7 @@ k create secret generic wordpress-user-password --dry-run=client --from-literal 
 
 ## Notes on sealedsecrets
 
+- You must be connected to the cluster you wish to deploy to with `kubectl` when running `kubeseal`
 - You cant update the `sealedsecret` after its created and deploy it. It wont work! (This is a good thing)
 - You cant deploy the same secret to different namespaces. It wont work! (This is also a good thing)
   
@@ -103,4 +104,4 @@ k create secret generic wordpress-user-password --dry-run=client --from-literal 
 
 - [GitHub Repo for Sealed-Secrets](https://github.com/bitnami-labs/sealed-secrets)
 - [The DevOps Toolkit Series - Bitnami Sealed Secrets - How To Store Kubernetes Secrets In Git Repositories](https://www.youtube.com/watch?v=xd2QoV6GJlc&t=21s)
-- [Kubernetes Secrets by Example](https://blog.serialexperiments.co.uk/posts/kubenetes-secrets-by-example/)
+- [Kubernetes Secrets by Example](https://blog.serialexperiments.co.uk/posts/kubernetes-secrets-by-example/)

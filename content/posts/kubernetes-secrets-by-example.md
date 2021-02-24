@@ -190,5 +190,5 @@ echo TXlTdXBlclNlY3JldFBhc3N3b3Jk | base64 --decode
 
 - [Kubernetes secrets doc](https://kubernetes.io/docs/concepts/configuration/secret/)
 - [YouTube Video - ThatDevOps Guy - Kubernetes Secret Management Explained](https://www.youtube.com/watch?v=o36yTfGDmZ0)
-- [SealedSecrets by Example](https://blog.serialexperiments.co.uk/posts/sealedsecrets-by-example)
+- [SealedSecrets by Example](https://blog.serialexperiments.co.uk/posts/kubernetes-sealedsecrets-by-example/)
   
