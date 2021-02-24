@@ -1,7 +1,7 @@
 ---
 title: "WSL Helpful Commands"
 date: "2020-12-09"
-description: "Set of helpful WSL commands"
+summary: "Set of helpful WSL commands"
 tags: [
     "wsl",
     "workstation"

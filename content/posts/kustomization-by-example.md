@@ -1,7 +1,7 @@
 ---
 title: "Kubectl Kustomization by Example"
 date: "2021-01-10"
-description: "Example syntax for Kustomization files using kubectl"
+summary: "Example syntax for Kustomization files using kubectl"
 tags: [
     "kubernetes",
 ]

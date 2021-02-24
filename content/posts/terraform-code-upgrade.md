@@ -1,7 +1,7 @@
 ---
 title: "Terraform Code Upgrades"
 date: "2023-01-28"
-description: "How to upgrade your legacy Terraform code to 0.14"
+summary: "How to upgrade your legacy Terraform code to 0.14"
 tags: [
     "terraform",
 ]

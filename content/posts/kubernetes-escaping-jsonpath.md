@@ -1,7 +1,7 @@
 ---
 title: "Escaping kubernetes jsonpath"
 date: "2021-02-24"
-description: "Note on how to escape when using `-o jsonpath=` in kubernetes"
+summary: "Note on how to escape when using `-o jsonpath=` in kubernetes"
 tags: [
     "kubernetes",
 ]

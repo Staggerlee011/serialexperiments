@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes Workstation Setup"
 date: "2020-12-14"
-description: "My workstation setup for kubernetes"
+summary: "My workstation setup for kubernetes"
 tags: [
     "kubernetes",
     "workstation",

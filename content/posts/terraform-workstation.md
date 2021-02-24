@@ -1,7 +1,7 @@
 ---
 title: "Terraform Workstation Setup"
 date: "2022-01-28"
-description: "My workstation setup for Terraform"
+summary: "My workstation setup for Terraform"
 tags: [
     "terraform",
     "workstation",

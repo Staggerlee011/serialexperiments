@@ -1,7 +1,7 @@
 ---
 title: "Setup Python virtualenv"
 date: "2020-12-06"
-description: "Setup python virtualenv for Windows or Ubuntu"
+summary: "Setup python virtualenv for Windows or Ubuntu"
 tags: [
     "python",
 ]

@@ -1,7 +1,7 @@
 ---
 title: "Setting the Default Profile for Windows Terminal"
 date: "2021-02-12"
-description: "Steps to change the default profile on Windows Terminal from PowerShell to WSL"
+summary: "Steps to change the default profile on Windows Terminal from PowerShell to WSL"
 tags: [
     "windows-terminal",
     "workstation"

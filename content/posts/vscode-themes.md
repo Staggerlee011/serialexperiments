@@ -1,7 +1,7 @@
 ---
 title: "VSCode Themes"
 date: "2021-02-18"
-description: "Controls and management of VSCode"
+summary: "Controls and management of VSCode"
 tags: [
     "vscode",
     "workstation"

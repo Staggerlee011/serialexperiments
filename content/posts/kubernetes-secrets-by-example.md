@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes Secrets by Example"
 date: "2021-01-21"
-description: "Examples to create and use kubernetes secrets"
+summary: "Examples to create and use kubernetes secrets"
 tags: [
     "kubernetes",
 ]

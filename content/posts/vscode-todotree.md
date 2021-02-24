@@ -1,7 +1,7 @@
 ---
 title: "VSCode Todo Tree"
 date: "2020-12-17"
-description: "Basic usage of the vscode extension todo-tree"
+summary: "Basic usage of the vscode extension todo-tree"
 tags: [
     "vscode",
     "workstation"

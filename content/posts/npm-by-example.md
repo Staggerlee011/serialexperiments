@@ -1,7 +1,7 @@
 ---
 title: "NPM by Example"
 date: "2022-01-18"
-description: "Example Setup and config for NPM"
+summary: "Example Setup and config for NPM"
 tags: [
     "nodejs",
 ]
