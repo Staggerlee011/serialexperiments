@@ -1,7 +1,7 @@
 ---
 title: "SealedSecrets by Example"
 date: "2021-01-22"
-description: "Deployment and usage of sealed secrets"
+summary: "Deployment and usage of sealed secrets"
 tags: [
     "kubernetes",
 ]

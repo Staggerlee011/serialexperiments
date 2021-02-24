@@ -1,7 +1,7 @@
 ---
 title: "Flyway database migrations on Kubernetes"
 date: "2021-01-19"
-description: "Running flyway database migrations in kubernetes"
+summary: "Running flyway database migrations in kubernetes"
 tags: [
     "kubernetes",
     "database"

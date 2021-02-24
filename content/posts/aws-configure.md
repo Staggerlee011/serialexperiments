@@ -1,7 +1,7 @@
 ---
 title: "aws-cli Configure by Example"
 date: "2021-01-04"
-description: "Basic usage aws-cli for account management"
+summary: "Basic usage aws-cli for account management"
 tags: [
     "aws",
 ]

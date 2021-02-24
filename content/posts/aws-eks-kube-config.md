@@ -1,7 +1,7 @@
 ---
 title: "EKS Kube Config"
 date: "2021-01-15"
-description: "Code for connecting to a new EKS Cluster"
+summary: "Code for connecting to a new EKS Cluster"
 tags: [
     "kubernetes",
     "aws",

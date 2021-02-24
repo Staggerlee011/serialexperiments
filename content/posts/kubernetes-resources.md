@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes Resources"
 date: "2021-01-25"
-description: "Collection of resources for learning kubernetes"
+summary: "Collection of resources for learning kubernetes"
 tags: [
     "kubernetes",
 ]

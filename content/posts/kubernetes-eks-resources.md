@@ -1,7 +1,7 @@
 ---
 title: "EKS Resources"
 date: "2021-01-25"
-description: "Collection of resources for learning / managing EKS"
+summary: "Collection of resources for learning / managing EKS"
 tags: [
     "kubernetes",
     "eks"

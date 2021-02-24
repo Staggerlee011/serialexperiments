@@ -1,7 +1,7 @@
 ---
 title: "Serverless Framework by Example"
 date: "2021-01-14"
-description: "Example setup and usage of the Serverless Framework with AWS and python"
+summary: "Example setup and usage of the Serverless Framework with AWS and python"
 tags: [
     "python",
     "aws",
@@ -14,24 +14,24 @@ At present I'm using the `serverless framework` to deploy and manage all my `lam
 <!-- TOC -->
 
 - [Basics](#basics)
-  - [Create a new project](#create-a-new-project)
-  - [Deploy project](#deploy-project)
-  - [Test Function](#test-function)
-  - [Serverless.yml template](#serverlessyml-template)
+    - [Create a new project](#create-a-new-project)
+    - [Deploy project](#deploy-project)
+    - [Test Function](#test-function)
+    - [Serverless.yml template](#serverlessyml-template)
 - [Plugins](#plugins)
-  - [Add a plugin](#add-a-plugin)
-  - [Serverless-iam-roles-per-function](#serverless-iam-roles-per-function)
-    - [Usage](#usage)
-    - [Add serverless-iam-roles-per-function](#add-serverless-iam-roles-per-function)
-    - [Add to servereless.yml](#add-to-serverelessyml)
+    - [Add a plugin](#add-a-plugin)
+    - [Serverless-iam-roles-per-function](#serverless-iam-roles-per-function)
+        - [Usage](#usage)
+        - [Add serverless-iam-roles-per-function](#add-serverless-iam-roles-per-function)
+        - [Add to servereless.yml](#add-to-serverelessyml)
 - [Serverless.yml Functions](#serverlessyml-functions)
-  - [CRON job](#cron-job)
-  - [Using SSM values](#using-ssm-values)
-  - [Deploy function to VPC](#deploy-function-to-vpc)
+    - [CRON job](#cron-job)
+    - [Using SSM values](#using-ssm-values)
+    - [Deploy function to VPC](#deploy-function-to-vpc)
 - [Serverless.yml Resources](#serverlessyml-resources)
-  - [Dynamodb](#dynamodb)
-    - [References](#references)
-- [References](#references-1)
+    - [Dynamodb](#dynamodb)
+        - [References](#references)
+- [References](#references)
 
 <!-- /TOC -->
 

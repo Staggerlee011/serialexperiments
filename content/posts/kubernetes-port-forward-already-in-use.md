@@ -1,7 +1,7 @@
 ---
 title: "Kubectl port forwarding - address already in use"
 date: "2021-01-26"
-description: "Collection of resources for learning / managing EKS"
+summary: "Collection of resources for learning / managing EKS"
 tags: [
     "kubernetes",
     "linux"

@@ -1,7 +1,7 @@
 ---
 title: "Kube-linter by Example"
 date: "2021-01-21"
-description: "Example usage and possible fixes to kube-linter"
+summary: "Example usage and possible fixes to kube-linter"
 tags: [
     "kubernetes",
 ]

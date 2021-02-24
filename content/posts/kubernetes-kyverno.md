@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes Policy as Code with Kyverno"
 date: "2020-12-15"
-description: "Examples and usage of Kyverno on kubernetes"
+summary: "Examples and usage of Kyverno on kubernetes"
 tags: [
     "kubernetes",
 ]
