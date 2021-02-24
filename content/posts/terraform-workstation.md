@@ -14,20 +14,31 @@ This is my current setup for `terraform` (running on WSL2 ubunutu-18)
 
 I currently use the following software to manage and interact with `terraform`:
 
+- tfenv
+- tfsec
+
+### brew
+
+You can install all the above software via `brew`
+
+``` bash
+brew install tfenv tfsec 
+```
+
 ### tfenv
 
 Terraform releases are quick and keeping all our environments on the same version isn't possible. `tfenv` resolves that by letting us have multiple versions installed and easy to manage.
 
 ### tfsec
 
-
+Gives you a guize 
 
 ## tfenv configuration
 
 We currently have code in 12/13 and 14. We upgrade any `terraform` that is edited or when we have time in a sprint to refactor. With that I get the latest `terraform` 14 and 13.
 
 ``` bash
-tfenv install latest
+tfenv install latest:^0.14
 tfenv install latest:^0.13
 tfenv use latest
 ```
