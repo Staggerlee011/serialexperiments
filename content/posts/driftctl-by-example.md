@@ -26,13 +26,11 @@ sudo mv driftctl /usr/local/bin/
 
 ## Compare against s3 state using a AWS named profile
 
-Run a `driftctl` scan against a `terraform.tfstate` hosted on `s3` via a `AWS Named Profile` you can add as many `--from` as you like
+Run a `driftctl` scan against `ALL` tfstate in a `s3 bucket`
 
 ``` bash
 AWS_PROFILE=eng driftctl scan \
---from tfstate+s3://<S3 Bucket>/core/terraform.tfstate \
---from tfstate+s3://<S3 Bucket>/data/terraform.tfstate \
---from tfstate+s3://<S3 Bucket>/eks/terraform.tfstate
+--from tfstate+s3://<S3 Bucket>/
 ```
 
 ## Run a scan against specific tagged resources
@@ -45,7 +43,7 @@ AWS_PROFILE=<Profile Name> driftctl scan --from tfstate+s3://<S3 Bucket>/core/te
 
 ## Ignore objects
 
-There are going to be objects created outside of terraform that you want to ignore, things like your `tfstate` `s3` bucket / `dynamodb` table. Or maybe objects created via the `Serverless Framework` or `SAM` which overlaty onto `Cloudformation`
+There are going to be objects created outside of terraform that you want to ignore, things like your `tfstate` `s3` bucket / `dynamodb` table. Or maybe objects created via the `Serverless Framework` or `SAM` which overlays onto `Cloudformation`
 
 Create a file in the location you are running the scan from named: `.driftignore`
 
