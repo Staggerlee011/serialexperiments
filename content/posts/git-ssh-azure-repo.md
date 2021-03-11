@@ -63,11 +63,11 @@ Now log into your `Azure-Devop` account and open `SSH public keys` via:
 User Settings icon -> SSH public keys
 ```
 
-![ssh public keys](azure-repo-ssh/azure-repo-ssh-01.png)
+![ssh public keys](/azure-repo-ssh/azure-repo-ssh-01.png)
 
 Select `New Key`
 
-![New Key](azure-repo-ssh/azure-repo-ssh-03.png)
+![New Key](/azure-repo-ssh/azure-repo-ssh-03.png)
 
 `Copy and Paste` your new ssh keys public key from the below into the web portal of `Azure-Devops`:
 
@@ -75,7 +75,7 @@ Select `New Key`
 cat ~/.ssh/azure-repo.pub
 ```
 
-![Add Key](azure-repo-ssh/azure-repo-ssh-02.png)
+![Add Key](/azure-repo-ssh/azure-repo-ssh-02.png)
 
 ## Test SSH
 
@@ -98,7 +98,7 @@ If you don't get this message, check your config or look at the resources sectio
 
 Your now ready to connect to all repos in the `azure-devops` organization (Unless RBAC has been implemented) via your normal `git clone`, First get the `URL` for `ssh` from the repo:
 
-![Add Key](azure-repo-ssh/azure-repo-ssh-04.png)
+![Add Key](/azure-repo-ssh/azure-repo-ssh-04.png)
 
 Then run the clone command
 
