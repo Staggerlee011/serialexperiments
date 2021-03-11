@@ -47,7 +47,7 @@ The key's randomart image is:
 
 ## Configure SSH
 
-Next you need to configure SSH via the `~/.ssh/config`, if the file doesn't exist, create it via `touch ~/.ssh/config`. A newly created file should look like:
+Next you need to configure SSH via the `~/.ssh/config`, to use the new `ssh key` for all your repos. If the file doesn't exist, create it via `touch ~/.ssh/config`. You will need create / update it, with the below:
 
 ``` yaml
 Host ssh.dev.azure.com
@@ -69,7 +69,7 @@ Select `New Key`
 
 ![New Key](/azure-repo-ssh/azure-repo-ssh-03.png)
 
-`Copy and Paste` your new ssh keys public key from the below into the web portal of `Azure-Devops`:
+Copy and Paste your new public `ssh` key into the web portal of `Azure-Devops`:
 
 ``` bash
 cat ~/.ssh/azure-repo.pub
