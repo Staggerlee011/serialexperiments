@@ -4,6 +4,7 @@ date: "2021-03-11"
 summary: "Steps to connect to a Azure-Repo via SSH"
 tags: [
     "azure-repo",
+    "azure-devops",
 ]
 ---
 
