@@ -5,6 +5,7 @@ summary: "Steps to connect to a Azure-Repo via SSH"
 tags: [
     "azure-repo",
     "azure-devops",
+    "git",
 ]
 ---
 

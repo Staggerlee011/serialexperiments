@@ -16,13 +16,14 @@ I currently use the following software to manage and interact with `terraform`:
 
 - tfenv
 - tfsec
+- driftctl
 
 ### brew
 
 You can install all the above software via `brew`
 
 ``` bash
-brew install tfenv tfsec 
+brew install tfenv tfsec driftctl
 ```
 
 ### tfenv
@@ -58,3 +59,6 @@ $ tfenv list
 cat: /home/linuxbrew/.linuxbrew/Cellar/tfenv/2.0.0/version: No such file or directory
 Version could not be resolved (set by /home/linuxbrew/.linuxbrew/Cellar/tfenv/2.0.0/version or tfenv use <version>)
 ```
+
+## Driftctl
+
