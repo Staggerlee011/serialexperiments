@@ -1,0 +1,12 @@
+ArgoCD
+argocd
+PowerShell
+ECR
+IRSA
+ec2
+netshoot
+terminate
+kustomize
+runAsNonRoot
+readOnlyRootFilesystem
+vscode
