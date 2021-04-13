@@ -32,6 +32,7 @@ StylesPath = styles
 Vocab = tech
 
 [*.md]
+
 BasedOnStyles = Google
 ```
 
@@ -44,6 +45,10 @@ This is your root folder for 3rd party styles, language rules etc.
 You can add single or multiple values here. Its a section for adding words that you want to ignore or highlight from your `linting`. I have added a `tech` folder and put in words like `aws`, `kubernetes` etc.
 
 You create a folder and under your `StylesPath` with the vocab name and then add 2 files, `accept.txt` and `reject.txt`
+
+### File types
+
+Next list which file types you wish to run vale against example `[*.md]` will only check `markdown` files
 
 ### BasedOnStyles
 
