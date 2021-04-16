@@ -9,29 +9,31 @@ tags: [
 ]
 ---
 
-At present I'm using the `serverless framework` to deploy and manage all my `lambda` functions. For more details on how to use `serverless framework` please see my links at the bottom of the post. These are examples are quick `templates` I use to cut and paste into new projects to get going a bit quicker.
+At present I'm using the `serverless framework` to deploy and manage all my `lambda` functions.
+For more details on how to use `serverless framework` please see my links at the bottom of the post.
+These are examples are quick `templates` I use to cut and paste into new projects to get going a bit quicker.
 
 <!-- TOC -->
 
 - [Basics](#basics)
-    - [Create a new project](#create-a-new-project)
-    - [Deploy project](#deploy-project)
-    - [Test Function](#test-function)
-    - [Serverless.yml template](#serverlessyml-template)
+  - [Create a new project](#create-a-new-project)
+  - [Deploy project](#deploy-project)
+  - [Test Function](#test-function)
+  - [Serverless.yml template](#serverlessyml-template)
 - [Plugins](#plugins)
-    - [Add a plugin](#add-a-plugin)
-    - [Serverless-iam-roles-per-function](#serverless-iam-roles-per-function)
-        - [Usage](#usage)
-        - [Add serverless-iam-roles-per-function](#add-serverless-iam-roles-per-function)
-        - [Add to servereless.yml](#add-to-serverelessyml)
+  - [Add a plugin](#add-a-plugin)
+  - [Serverless-iam-roles-per-function](#serverless-iam-roles-per-function)
+    - [Usage](#usage)
+    - [Add serverless-iam-roles-per-function](#add-serverless-iam-roles-per-function)
+    - [Add to servereless.yml](#add-to-serverelessyml)
 - [Serverless.yml Functions](#serverlessyml-functions)
-    - [CRON job](#cron-job)
-    - [Using SSM values](#using-ssm-values)
-    - [Deploy function to VPC](#deploy-function-to-vpc)
+  - [CRON job](#cron-job)
+  - [Using SSM values](#using-ssm-values)
+  - [Deploy function to VPC](#deploy-function-to-vpc)
 - [Serverless.yml Resources](#serverlessyml-resources)
-    - [Dynamodb](#dynamodb)
-        - [References](#references)
-- [References](#references)
+  - [Dynamodb](#dynamodb)
+    - [References](#references)
+- [References](#references-1)
 
 <!-- /TOC -->
 
@@ -123,7 +125,7 @@ plugins:
 
 ### Add a plugin
 
-To add a plugin you will need to add it under the `plugins:` section of `serverless.yml` 
+To add a plugin you will need to add it under the `plugins:` section of `serverless.yml`
 
 ``` yml
 plugins:
@@ -292,7 +294,6 @@ resources:
 
 - [AWS Dynamodb Create Table](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_CreateTable.html#DDB-CreateTable-request-AttributeDefinitions)
 - [Serverless Dynamodb](https://www.serverless.com/dynamodb)
-
 
 ## References
 

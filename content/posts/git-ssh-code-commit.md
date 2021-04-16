@@ -50,11 +50,8 @@ The key's randomart image is:
 ## CodeCommit Configuration
 
 Now log into the `AWS Console` navigate to the `IAM` service and select the `User` you wish to add the `ssh key` to.
-
 Choose the `Security Credentials` tab, scroll down and select `Upload SSH public key`
-
 ![CodeCommit SSH public keys](/codecommit-ssh/codecommit-ssh-01.png)
-
 Copy and Paste your new public `ssh` key into the console:
 
 ``` bash
@@ -62,15 +59,12 @@ cat ~/.ssh/codecommit.pub
 ```
 
 ![CodeCommit Add Key](/codecommit-ssh/codecommit-ssh-02.png)
-
 This generates an `SSH key ID` note this down!
-
 ![CodeCommit ID](/codecommit-ssh/codecommit-ssh-03.png)
 
 ## Configure SSH
 
 Next you need to configure SSH via the `~/.ssh/config`, to use the new `ssh key` for your repos. If the file doesn't exist, create it via `touch ~/.ssh/config`. You will need create / update it like below
-
 `Note to update the User key with the one genereated above`
 
 ``` yaml
@@ -95,11 +89,9 @@ Connection to git-codecommit.us-east-2.amazonaws.com closed.
 ```
 
 If you don't get this message, check your config or look at the resources section below for more troubleshooting steps.
-
 ## Connect to CodeCommit Repo
 
 Your now ready to connect to a repos from `CodeCommit`
-
 Then run the clone command
 
 ``` bash
@@ -116,4 +108,3 @@ warning: You appear to have cloned an empty repository.
 
 - [CodeCommit AWS Docs - Setting up SSH](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-ssh-unixes.html)
 - [CodeCommit AWS Docs - Use SSH keys and SSH with CodeCommit](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_ssh-keys.html#ssh-keys-code-commit)
-  
