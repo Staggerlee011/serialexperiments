@@ -51,15 +51,15 @@ The key's randomart image is:
 
 Now log into your `Github` account, from the upper-right corner, click your profile photo, then click Settings
 
-![Github Settings](/github-ssh/github-ssh01.png)
+![Github Settings](/github-ssh/ssh-github01.png)
 
 Click `SSH and GPG keys`
 
-![Github SSH](/github-ssh/github-ssh02.png)
+![Github SSH](/github-ssh/ssh-github02.png)
 
 Click `New SSH Key`
 
-![Github New SSH key](/github-ssh/github-ssh03.png)
+![Github New SSH key](/github-ssh/ssh-github03.png)
 
 Copy and Paste your new public `ssh` key into the window and give it a name :
 
@@ -67,7 +67,7 @@ Copy and Paste your new public `ssh` key into the window and give it a name :
 cat ~/.ssh/github.pub
 ```
 
-![Github Add SSH key](/github-ssh/github-ssh04.png)
+![Github Add SSH key](/github-ssh/ssh-github04.png)
 
 If prompted confirm your `Github` password.
 
