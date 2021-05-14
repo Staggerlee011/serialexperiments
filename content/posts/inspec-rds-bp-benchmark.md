@@ -1,5 +1,5 @@
 ---
-title: "Inspec AWS RDS best practise benchmark"
+title: "Inspec rds-bp-benchmark"
 date: "2021-05-14"
 summary: ""
 tags: [
