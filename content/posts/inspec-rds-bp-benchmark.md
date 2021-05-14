@@ -11,6 +11,10 @@ tags: [
 
 I've just published a new `github` repo that contains a collection of base best practises for your `rds` instances.
 
+``` yml
+https://github.com/Staggerlee011/rds-bp-benchmark
+```
+
 ## Example usage
 
 Create you `inspec` profile (For help see my blog post: `https://blog.serialexperiments.co.uk/posts/inspec-by-example/`)
