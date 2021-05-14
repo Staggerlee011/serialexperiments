@@ -1,6 +1,6 @@
 ---
 title: "Pytest by Example"
-date: "2020-04-21"
+date: "2023-04-21"
 summary: "Examples of usage and configuration for pytest"
 tags: [
     "python",
@@ -12,12 +12,13 @@ tags: [
 <!-- TOC -->
 
 - [Configuration files](#configuration-files)
-    - [pytest.ini](#pytestini)
-    - [conftest.py](#conftestpy)
+  - [pytest.ini](#pytestini)
+  - [conftest.py](#conftestpy)
 - [Markers](#markers)
-    - [Document markers in pytest.ini](#document-markers-in-pytestini)
-    - [Run tests against markers](#run-tests-against-markers)
+  - [Document markers in pytest.ini](#document-markers-in-pytestini)
+  - [Run tests against markers](#run-tests-against-markers)
 - [Fixtures](#fixtures)
+- [Parameterize](#parameterize)
 
 <!-- /TOC -->
 
