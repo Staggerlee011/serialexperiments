@@ -1,7 +1,7 @@
 ---
 title: "Inspec rds-bp-benchmark"
 date: "2021-05-14"
-summary: ""
+summary: "Inspec github for rds best practices"
 tags: [
     "inspec",
     "github",
