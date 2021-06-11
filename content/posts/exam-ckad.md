@@ -1,6 +1,6 @@
 ---
 title: "Passed CKAD"
-date: "2021-05-11"
+date: "2021-06-11"
 summary: "I passed the CKAD exam today!"
 tags: [
     "exam",
