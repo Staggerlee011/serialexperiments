@@ -1,6 +1,6 @@
 ---
 title: "Connect to GitLab via SSH"
-date: "2021-03-13"
+date: "2021-07-27"
 summary: "Steps to connect to a GitLab via SSH"
 tags: [
     "gitlab",
